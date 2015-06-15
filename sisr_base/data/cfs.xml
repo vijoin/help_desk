@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="0">
+		  
+	<!-- Centros de Formación Socialista -->
+	<record id="cfs_CAM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CAM</field>
+		<field name="nombre">C.F.S. Cacique Aramare</field>
+		<field name="ubicacion">Urb. Monseñor Segundo García. Calle Principal frente al Frente Puerto Ayacucho</field>
+		<field name="telefono">0248-5210990</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_AMA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_AMA_ATU"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_AMA_ATU_FGT"/>
+	</record>
+
+	<record id="cfs_SBO" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SBO</field>
+		<field name="nombre">C.F.S. Simón Bolívar</field>
+		<field name="ubicacion">Av. Boyacá II, frente a la pasarela, al lado del Colegio de Periodista   Barcelona</field>
+		<field name="telefono">0281-2711179</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ANZ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ANZ_SBO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ANZ_SBO_CAR"/>
+	</record>
+
+	<record id="cfs_EBU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">EBU</field>
+		<field name="nombre">C.F.S. Eulalia Buroz</field>
+		<field name="ubicacion">Calle Bolívar Sector Pueblo Nuevo. Frente al Central Madeirense Puerto La Cruz</field>
+		<field name="telefono">0281-2695170</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ANZ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ANZ_JAS"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ANZ_JAS_PLC"/>
+	</record>
+
+	<record id="cfs_ETI" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ETI</field>
+		<field name="nombre">C.F.S. El Tigre</field>
+		<field name="ubicacion">Cuarta Carrera con Cuarta Calle, Pueblo Nuevo Sur El Tigre</field>
+		<field name="telefono">0283-2350089</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ANZ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ANZ_SRO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ANZ_SRO_EBA"/>
+	</record>
+
+	<record id="cfs_PAR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">PAR</field>
+		<field name="nombre">C.F.S. Pariaguan</field>
+		<field name="ubicacion">Calle Urdaneta  Sector Pinto Salinas</field>
+		<field name="telefono">0283-8820520</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ANZ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ANZ_FMI"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ANZ_FMI_PRI"/>
+	</record>
+
+	<record id="cfs_JAS" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JAS</field>
+		<field name="nombre">C.F.S. Juan Antonio Sotillo</field>
+		<field name="ubicacion">Calle Montes frente al Campo Gulf  Puerto la Cruz</field>
+		<field name="telefono">0281-2662461</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ANZ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ANZ_JAS"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ANZ_JAS_PLC"/>
+	</record>
+
+	<record id="cfs_FDM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">FDM</field>
+		<field name="nombre">C.F.S. Francisco De Miranda</field>
+		<field name="ubicacion">Calle Anaco, a 100 metros de la Concha Acústica Bulevar Venezuela Sector Chaparral</field>
+		<field name="telefono">0282-4251240</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ANZ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ANZ_ANA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ANZ_ANA_ACO"/>
+	</record>
+
+	<record id="cfs_SFE" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SFE</field>
+		<field name="nombre">C.F.S. San Fernando</field>
+		<field name="ubicacion">Calle 19 de Abril, cruce con calle Miranda, anexo edificio INCES</field>
+		<field name="telefono">0247-3410384</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_APU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_APU_SFE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_APU_SFE_SFA"/>
+	</record>
+
+	<record id="cfs_IAP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">IAP</field>
+		<field name="nombre">C.F.S. Industrial Apure</field>
+		<field name="ubicacion">Calle Plaza con Av. Miranda. Al Lado del Jardín de Infancia San Fernando</field>
+		<field name="telefono">0247-3410986</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_APU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_APU_SFE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_APU_SFE_SFA"/>
+	</record>
+
+	<record id="cfs_GUA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">GUA</field>
+		<field name="nombre">C.F.S. Guasdualito (Alto Apure)</field>
+		<field name="ubicacion">Calle Bolívar, con carrera Rondón Sector El Centro Antiguo Hospital</field>
+		<field name="telefono">0278-3320871</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_APU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_APU_PAE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_APU_PAE_GUA"/>
+	</record>
+
+	<record id="cfs_BIR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BIR</field>
+		<field name="nombre">C.F.S. Biruaca</field>
+		<field name="ubicacion">Av. Intercomunal San Fernando Biruaca, al lado del Seguro Social</field>
+		<field name="telefono">0247-3645115</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_APU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_APU_BIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_APU_BIR_BRU"/>
+	</record>
+
+	<record id="cfs_CEM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CEM</field>
+		<field name="nombre">C.F.S. Centro Nacional De Mecánica Automotriz (CEMA)</field>
+		<field name="ubicacion">Av. Intercomunal Vía Turmero, al Lado de Makro Maracay</field>
+		<field name="telefono">0243-2690360</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_GIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_GIR_UJC"/>
+	</record>
+
+	<record id="cfs_EPA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">EPA</field>
+		<field name="nombre">C.F.S. Escuela Práctica Agrícola La Providencia Epa</field>
+		<field name="ubicacion">Av. Intercomunal Turmero-Maracay Sector La Providencia</field>
+		<field name="telefono">0243-2691657</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_SMA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_SMA_TUR"/>
+	</record>
+
+	<record id="cfs_MMV" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MMV</field>
+		<field name="nombre">C.F.S. Metal Minero La Victoria</field>
+		<field name="ubicacion">Av. Principal Las Mercedes, sector 1, al Lado del IVSS, La Victoria</field>
+		<field name="telefono">0244- 8716689</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_JFR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_JFR_UCN"/>
+	</record>
+
+	<record id="cfs_VDC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">VDC</field>
+		<field name="nombre">C.F.S. Villa De Cura</field>
+		<field name="ubicacion">Calle Comercio  Oeste Nº48 vía El Cementerio, al lado de Helados Mario, sector Las Tablitas</field>
+		<field name="telefono">0244-3865056</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_ZAM"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_ZAM_VCU"/>
+	</record>
+
+	<record id="cfs_LVI" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LVI</field>
+		<field name="nombre">C.F.S. La Victoria</field>
+		<field name="ubicacion">Av. Francisco Loreto. C.C. Loreto 3er. Nivel. Locales 16 Y 17 Centro Comercial La Victoria</field>
+		<field name="telefono">0244-3213637</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_JFR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_JFR_JFR"/>
+	</record>
+
+	<record id="cfs_ELI" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ELI</field>
+		<field name="nombre">C.F.S. El Limón</field>
+		<field name="ubicacion">Av. Ramón Narváez sector La Coromoto. Frente a la Escuela Técnica Joaquín Avellanan</field>
+		<field name="telefono">0243-5540043</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_GIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_GIR_ULT"/>
+	</record>
+
+	<record id="cfs_TMA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">TMA</field>
+		<field name="nombre">C.F.S. Textil Maracay</field>
+		<field name="ubicacion">Urbanización Candelaria II, Av. Casanova Godoy, con Calle Bicentenaria, El Limón  Maracay</field>
+		<field name="telefono">0243-2838954</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_MBI"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_MBI_CDA"/>
+	</record>
+
+	<record id="cfs_BER" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BER</field>
+		<field name="nombre">C.F.S. Bermudez</field>
+		<field name="ubicacion">Final Av. Bermúdez, con calle La Papelera. Sector Campo Alegre Maracay</field>
+		<field name="telefono">0243-2720465</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_GIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_GIR_UJG"/>
+	</record>
+
+	<record id="cfs_MAR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MAR</field>
+		<field name="nombre">C.F.S. Maracay</field>
+		<field name="ubicacion">Av. Bolívar Oeste. Sector La Romana Nº 185. Edif. INCES Maracay</field>
+		<field name="telefono">0243-5532149</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_GIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_GIR_ULT"/>
+	</record>
+
+	<record id="cfs_CAG" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CAG</field>
+		<field name="nombre">C.F.S. Cagua</field>
+		<field name="ubicacion">Zona Industrial Corinsa calle Lozano, al Lado del Seguro Social S/T</field>
+		<field name="telefono">0244-3958866</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_SUC_CAG"/>
+	</record>
+
+	<record id="cfs_ODC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ODC</field>
+		<field name="nombre">C.F.S. Ocumare De La Costa</field>
+		<field name="ubicacion">Prolongación Calle Sucre con Calle principal de la Constancia. Frente Stadium David Concepción S/N</field>
+		<field name="telefono">0243-9931353</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_OCU"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_OCU_OCO"/>
+	</record>
+
+	<record id="cfs_MMY" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MMY</field>
+		<field name="nombre">C.F.S. Metalminero Maracay</field>
+		<field name="ubicacion">Av Aragua al lado de la Empresa Capaco,  Maracay</field>
+		<field name="telefono">0243-2358229</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_GIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_GIR_UJC"/>
+	</record>
+
+	<record id="cfs_CON" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CON</field>
+		<field name="nombre">C.F.S. Construcción</field>
+		<field name="ubicacion">Av. Intercomunal, vía Turmero - al lado de Makro - La Morita</field>
+		<field name="telefono">0243-2691582</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ARA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ARA_SMA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ARA_SMA_TUR"/>
+	</record>
+
+	<record id="cfs_FMI" model="sisr.base.dependencia_cfs">
+		<field name="codigo">FMI</field>
+		<field name="nombre">C.F.S. Francisco De Miranda</field>
+		<field name="ubicacion">Av. Industrial Barinas. Frente al Cuerpo de Bomberos</field>
+		<field name="telefono">0273-5262539</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BAR_BAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BAR_BAR_RBE"/>
+	</record>
+
+	<record id="cfs_JCA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JCA</field>
+		<field name="nombre">C.F.S. Josefa Camejo</field>
+		<field name="ubicacion">Av. Industrial Barinas. Frente al Cuerpo de Bomberos</field>
+		<field name="telefono">0273-5262539</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BAR_BAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BAR_BAR_RBE"/>
+	</record>
+
+	<record id="cfs_MSA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MSA</field>
+		<field name="nombre">C.F.S. Manuelita Sáenz</field>
+		<field name="ubicacion">Barrio El Cambio Entre la avenida C Y D. Barinas</field>
+		<field name="telefono">0273-5526693</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BAR_BAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BAR_BAR_CAR"/>
+	</record>
+
+	<record id="cfs_DOR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">DOR</field>
+		<field name="nombre">C. F.S. Diego De Ordaz</field>
+		<field name="ubicacion">El Roble San Félix</field>
+		<field name="telefono">0286-9311048</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BOL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BOL_CAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BOL_CAR_SBO"/>
+	</record>
+
+	<record id="cfs_JLC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JLC</field>
+		<field name="nombre">C.F.S. José Leonardo Chirinos</field>
+		<field name="ubicacion">Av. Moreno de Mendoza. San Félix, Edo. Bolívar</field>
+		<field name="telefono">0286-9311845</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BOL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BOL_CAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BOL_CAR_SBO"/>
+	</record>
+
+	<record id="cfs_TDH" model="sisr.base.dependencia_cfs">
+		<field name="codigo">TDH</field>
+		<field name="nombre">C.F.S. Tomas De Heres</field>
+		<field name="ubicacion">Av. La Paragua, edif. INCES. Ciudad Bolívar</field>
+		<field name="telefono">0285-6710871</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BOL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BOL_HER"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BOL_HER_VHE"/>
+	</record>
+
+	<record id="cfs_MPI" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MPI</field>
+		<field name="nombre">C.F.S. Manuel Piar</field>
+		<field name="ubicacion">Sector Alta Vista Sur, Puerto Ordaz</field>
+		<field name="telefono">0286-9614222</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BOL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BOL_CAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BOL_CAR_UNI"/>
+	</record>
+
+	<record id="cfs_NPR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">NPR</field>
+		<field name="nombre">C.F.S. Negro Primero</field>
+		<field name="ubicacion">Calle Bermúdez. Ciudad Bolívar</field>
+		<field name="telefono">0285-6540221</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BOL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BOL_HER"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BOL_HER_VHE"/>
+	</record>
+
+	<record id="cfs_CDY" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CDY</field>
+		<field name="nombre">C.F.S. Cacique Del Yocoima</field>
+		<field name="ubicacion">Calle Bolívar Upata</field>
+		<field name="telefono">0288-2213474</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_BOL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_BOL_PIA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_BOL_PIA_AEB"/>
+	</record>
+
+	<record id="cfs_GRU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">GRU</field>
+		<field name="nombre">C.F.S. Gral. Rafael Urdaneta</field>
+		<field name="ubicacion">Calle 5, entre Av. Este / Oeste 1 y Av. Este / Oeste 2. Urb La Isabelica</field>
+		<field name="telefono">0241-8322325</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_CAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_CAR_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_CAR_VAL_URU"/>
+	</record>
+
+	<record id="cfs_SIM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SIM</field>
+		<field name="nombre">C.F.S. Simón Rodríguez</field>
+		<field name="ubicacion">Av. Lara  entre Campo Elias y Mariño, sector San Blas 1, edificio INCES</field>
+		<field name="telefono">0241-8591230</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_CAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_CAR_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_CAR_VAL_USL"/>
+	</record>
+
+	<record id="cfs_LBF" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LBF</field>
+		<field name="nombre">C.F.S. Luis Beltrán Prieto Figueroa</field>
+		<field name="ubicacion">Av. Carabobo, entre calle Flores y Navas Spinola, edif. INCES, cerca de La ONIDEX</field>
+		<field name="telefono">0241-8575285</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_CAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_CAR_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_CAR_VAL_USJ"/>
+	</record>
+
+	<record id="cfs_BSA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BSA</field>
+		<field name="nombre">C.F.S.  Bartolome Salom</field>
+		<field name="ubicacion">Valle de Santa  Lucia. Vía Borburata, frente  a Dianca, al lado de La UNEFA</field>
+		<field name="telefono">0242-3611047</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_CAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_CAR_PUE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_CAR_PUE_UBO"/>
+	</record>
+
+	<record id="cfs_NSO" model="sisr.base.dependencia_cfs">
+		<field name="codigo">NSO</field>
+		<field name="nombre">C.F.S. Nacional De Soldadura</field>
+		<field name="ubicacion">Calle 5 entre Av. Este - Oeste, 1 y Este - Oeste 2. Frente al Bloque 37  Urb. La Isabelica</field>
+		<field name="telefono">0241-8322325</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_CAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_CAR_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_CAR_VAL_URU"/>
+	</record>
+
+	<record id="cfs_VAC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">VAC</field>
+		<field name="nombre">C.F.S. Valles Altos De Carabobo</field>
+		<field name="ubicacion">Sector El Bambú, calle Cementerio, Aldea Universitaria, Antiguo Internado</field>
+		<field name="telefono"></field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_CAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_CAR_MON"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_CAR_MON_MOT"/>
+	</record>
+
+	<record id="cfs_BIC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BIC</field>
+		<field name="nombre">C.F.S. Bicentenario</field>
+		<field name="ubicacion">Av. Michelena, debajo del Puente La Quizanda, zona Industrial Urb. La Quizanda. Edif. INCES</field>
+		<field name="telefono">0241-8331193</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_CAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_CAR_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_CAR_VAL_URU"/>
+	</record>
+
+	<record id="cfs_BTG" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BTG</field>
+		<field name="nombre">C.F.S. Batalla De Taguanes</field>
+		<field name="ubicacion">Zona Industrial frente al C.I.C.P.C La Floresta. Tinaquillo</field>
+		<field name="telefono">0258-7660773</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_COJ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_COJ_TIQ"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_TIQ_TIQ"/>
+        <field name="gerencia_regional_id" ref="ger_COJ"/>
+	</record>
+
+	<record id="cfs_MSA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MSA</field>
+		<field name="nombre">C.F.S. Matias Salazar</field>
+		<field name="ubicacion">C/Colina Entre Carabobo y Miranda</field>
+		<field name="telefono">0258-7662591</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_COJ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_COJ_TIQ"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_TIQ_TIQ"/>
+        <field name="gerencia_regional_id" ref="ger_COJ"/>
+	</record>
+
+	<record id="cfs_AGA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">AGA</field>
+		<field name="nombre">C.F.S. Argimiro Gabaldón</field>
+		<field name="ubicacion">C/Miranda entre Páez y Sucre. San Carlos</field>
+		<field name="telefono">0258-4332678</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_COJ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_COJ_EZZ"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_SAC_SCA"/>
+        <field name="gerencia_regional_id" ref="ger_COJ"/>
+	</record>
+
+	<record id="cfs_JLS" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JLS</field>
+		<field name="nombre">C.F.S. José Laurencio Silva</field>
+		<field name="ubicacion">Vía Las Vegas Sector. El Limón Km 2 a 300 mtrs de la Comandancia de la Policía</field>
+		<field name="telefono">0258-4430927</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_COJ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_COJ_EZZ"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_SAC_JAB"/>
+        <field name="gerencia_regional_id" ref="ger_COJ"/>
+	</record>
+
+	<record id="cfs_CFC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CFC</field>
+		<field name="nombre">C.F.S. Coronel Francisco Carvajal</field>
+		<field name="ubicacion">Calle Menca De Leoni, sector El Limoncito, frente al modulo de Salud Menca de Leoni</field>
+		<field name="telefono">0258-8088835</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_COJ"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_COJ_EZZ"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_SAC_SCA"/>
+        <field name="gerencia_regional_id" ref="ger_COJ"/>
+	</record>
+
+	<record id="cfs_YAK" model="sisr.base.dependencia_cfs">
+		<field name="codigo">YAK</field>
+		<field name="nombre">C.F.S. Yakera</field>
+		<field name="ubicacion">Calle Principal San Rafael al lado de La Antigua Coca Cola</field>
+		<field name="telefono">0424-9266467</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DEA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DEA_TUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DEA_TUC_SRF"/>
+	</record>
+
+	<record id="cfs_TUC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">TUC</field>
+		<field name="nombre">C.F.S. Tucupita</field>
+		<field name="ubicacion">Calle Petion  Av. Arismendi - Edif. INCES Tucupita</field>
+		<field name="telefono">0287-7213055</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DEA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DEA_TUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DEA_TUC_SJO"/>
+	</record>
+
+	<record id="cfs_CDN" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CDN</field>
+		<field name="nombre">C.F.S. Comercial Del Norte</field>
+		<field name="ubicacion">Esquina la Pelota, edif Don Joaquín, Piso 3 y 4  Av. Urdaneta</field>
+		<field name="telefono">0212-5646436</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_ALT"/>
+	</record>
+
+	<record id="cfs_LBT" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LBT</field>
+		<field name="nombre">C.F.S. Luis Beltrán Prieto Figueroa (TEXTIL)</field>
+		<field name="ubicacion">Av. San Martín Edif. INCES, Piso 1 Caracas</field>
+		<field name="telefono">0212-4625422</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_SJU"/>
+	</record>
+
+	<record id="cfs_LBP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LBP</field>
+		<field name="nombre">C.F.S. Dr. Luis Beltran Prieto Figueroa</field>
+		<field name="ubicacion">Av. San Martín, Caracas</field>
+		<field name="telefono">0212-4313772</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_SJU"/>
+	</record>
+
+	<record id="cfs_SIR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SIR</field>
+		<field name="nombre">C.F.S. Simón Rodríguez</field>
+		<field name="ubicacion">Zona F al lado del Chato Candela 23 De Enero</field>
+		<field name="telefono">0212-8704707</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_ENE"/>
+	</record>
+
+	<record id="cfs_MDE" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MDE</field>
+		<field name="nombre">C.F.S. Metalmecánica 23 De Enero</field>
+		<field name="ubicacion">Zona E 23 De Enero Entre Los Bloques 31 y 32 Del 23 De Enero</field>
+		<field name="telefono">0212-8708984</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_ENE"/>
+	</record>
+
+	<record id="cfs_MCA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MCA</field>
+		<field name="nombre">C.F.S. Metropolitano Caricuao</field>
+		<field name="ubicacion">Sector Cc2 - Caricuao, Ud. 3 Diagonal al Estadio Luis Aparicio</field>
+		<field name="telefono">0212-4311579</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_CAR"/>
+	</record>
+
+	<record id="cfs_IGC" model="sisr.base.dependencia_cfs">
+		<field name="codigo">IGC</field>
+		<field name="nombre">C.F.S. Integral Gran Colombia</field>
+		<field name="ubicacion">Av. Rooselvelt, Uene Gran Colombia. Edif. Sucre</field>
+		<field name="telefono">0212-4613539</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_SRO"/>
+	</record>
+
+	<record id="cfs_BSE" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BSE</field>
+		<field name="nombre">C.F.S. Banca-Seguro</field>
+		<field name="ubicacion">Mijares a Santa Capilla. Edif. Insbanca, piso 7 - 8 y 9  a  1/2 cuadra Av. Urdaneta</field>
+		<field name="telefono">0212-8608413</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_ALT"/>
+	</record>
+
+	<record id="cfs_CES" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CES</field>
+		<field name="nombre">C.F.S. Capacitación Especial</field>
+		<field name="ubicacion">Urb. Bella Vista, Calle Principal con Comercio al lado de Banco Banesco</field>
+		<field name="telefono">0212-4728450</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_PAR"/>
+	</record>
+
+	<record id="cfs_JAR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JAR</field>
+		<field name="nombre">C.F.S. Jorge Antonio Rodríguez</field>
+		<field name="ubicacion">Av. Nueva Granada . INCES - Edif  Anexo. (adscripto a  la Gerencia General de Formación Profesional SEDE)</field>
+		<field name="telefono">0212-6031498</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_SRO"/>
+	</record>
+
+	<record id="cfs_MAR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MAR</field>
+		<field name="nombre">C.F.S. Maracapana</field>
+		<field name="ubicacion">Comuna Cacique Tiuna De La Rinconada</field>
+		<field name="telefono"></field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_DTO"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_DTO_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_DTO_LIB_CHE"/>
+	</record>
+
+	<record id="cfs_FGM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">FGM</field>
+		<field name="nombre">C.F.S. Francisco De Miranda</field>
+		<field name="ubicacion">Av. Argentina. Diagonal Colegio De Periodistas. Punto Fijo</field>
+		<field name="telefono">0269-2465990</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_FAL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_FAL_CAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_FAL_CAR_CRI"/>
+	</record>
+
+	<record id="cfs_APR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">APR</field>
+		<field name="nombre">C.F.S. Alí Primera</field>
+		<field name="ubicacion">Av. Ollarvides. Barrio Las Margaritas. Punto Fijo</field>
+		<field name="telefono">0269-2459356</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_FAL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_FAL_CAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_FAL_CAR_PCA"/>
+	</record>
+
+	<record id="cfs_JSF" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JSF</field>
+		<field name="nombre">C.F.S. Josefa Camejo</field>
+		<field name="ubicacion">Av Pomarrosa Entre Av. Táchira Y Calle Don Bosco. Punto Fijo</field>
+		<field name="telefono">0269-2453421</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_FAL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_FAL_CAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_FAL_CAR_CRI"/>
+	</record>
+
+	<record id="cfs_JCH" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JCH</field>
+		<field name="nombre">C.F.S. Jose Leonardo Chirinos</field>
+		<field name="ubicacion">Calle Maparari entre Calle Juan Cristal y Av. Los Medanos-Coro</field>
+		<field name="telefono">0268-2513090</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_FAL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_FAL_MIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_FAL_MIR_SAT"/>
+	</record>
+
+	<record id="cfs_SJM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SJM</field>
+		<field name="nombre">C.F.S. San Juan De Los Morros</field>
+		<field name="ubicacion">Av. Miranda, al lado del Colegio José Félix Ribas. San Juan De Los Morros</field>
+		<field name="telefono">0246-4314812</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_GUA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_GUA_JGR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_GUA_JGR_SDM"/>
+	</record>
+
+	<record id="cfs_CAL" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CAL</field>
+		<field name="nombre">C.F.S. Calabozo</field>
+		<field name="ubicacion">Av. Principal Centro Adm. Diagonal a La Antigua Cámara De Comercio</field>
+		<field name="telefono">0246-8715592</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_GUA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_GUA_FMI"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_GUA_FMI_CUC"/>
+	</record>
+
+	<record id="cfs_VLP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">VLP</field>
+		<field name="nombre">C.F.S. Valle La Pascua</field>
+		<field name="ubicacion">Calle El Vigía. Al lado Terminal de Pasajeros</field>
+		<field name="telefono">0235-3416017</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_GUA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_GUA_LIN"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_GUA_LIN_VLP"/>
+	</record>
+
+	<record id="cfs_ZAR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ZAR</field>
+		<field name="nombre">C.F.S. Zaraza</field>
+		<field name="ubicacion">Calle Sucre Diagonal al Cementerio Municipal. Sector El Medano</field>
+		<field name="telefono">0238-7620846</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_GUA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_GUA_PZA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_GUA_PZA_ZRZ"/>
+	</record>
+
+	<record id="cfs_ADP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ADP</field>
+		<field name="nombre">C.F.S. Altagracia De Orituco</field>
+		<field name="ubicacion">Calle 4 Sector  Guaiqueries</field>
+		<field name="telefono">0238-3341151</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_GUA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_GUA_JTM"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_GUA_JTM_ATO"/>
+	</record>
+
+	<record id="cfs_CAR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CAR</field>
+		<field name="nombre">C.F.S. Cabruta</field>
+		<field name="ubicacion">Calle Principal. Al lado de la Guardia Nacional, Galpones Antiguos de Elecentro, Parroquia Cabruta</field>
+		<field name="telefono"></field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_GUA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_GUA_LME"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_GUA_LME_CAB"/>
+	</record>
+
+	<record id="cfs_IJP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">IJP</field>
+		<field name="nombre">C.F.S. Industrial José Pío Tamayo</field>
+		<field name="ubicacion">Carrera 1 con calle 22. Zona Industrial 1 Barrio Unión Parroquia Unión Municipio Iribarren</field>
+		<field name="telefono">0251-2372487</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_LAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_LAR_IRI"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_LAR_IRI_UNI"/>
+	</record>
+
+	<record id="cfs_CBA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CBA</field>
+		<field name="nombre">C.F.S. Construcción Barquisimeto</field>
+		<field name="ubicacion">Carrera 1 Con Calle 22. Zona Industrial 1 Barrio Unión</field>
+		<field name="telefono">0251-2375236</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_LAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_LAR_IRI"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_LAR_IRI_UNI"/>
+	</record>
+
+	<record id="cfs_JGP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JGP</field>
+		<field name="nombre">C.F.S. Jesus Gordo Paez</field>
+		<field name="ubicacion">Carrera 19 con Calle 23. Barquisimeto. Al Lado De La Gobernación</field>
+		<field name="telefono">0251-2333197</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_LAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_LAR_IRI"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_LAR_IRI_CAT"/>
+	</record>
+
+	<record id="cfs_CRO" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CRO</field>
+		<field name="nombre">C.F.S. Carora</field>
+		<field name="ubicacion">Calle 9 entre Av 3 y 4 Barrio El Calvario con Av Francisco De Miranda y Calle Zulia</field>
+		<field name="telefono">0252-4216407</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_LAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_LAR_TOR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_LAR_TOR_TSA"/>
+	</record>
+
+	<record id="cfs_FAM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">FAM</field>
+		<field name="nombre">C.F.S. Formación Agrícola Las Marias</field>
+		<field name="ubicacion">Caserio El Eneal sector Las Puipas, vía Agua Salada, Finca Las Marias</field>
+		<field name="telefono">0253-8086412</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_LAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_LAR_CRE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_LAR_CRE_JMB"/>
+	</record>
+
+	<record id="cfs_JBD" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JBD</field>
+		<field name="nombre">C.F.S. José Bernardo Dorantes Quibor</field>
+		<field name="ubicacion">Calle 9 entre Av 3 y 4 sector El Calvario, diagonal al Colegio Altagracia</field>
+		<field name="telefono">0253-4914077</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_LAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_LAR_JIM"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_LAR_JIM_JBR"/>
+	</record>
+
+	<record id="cfs_EVI" model="sisr.base.dependencia_cfs">
+		<field name="codigo">EVI</field>
+		<field name="nombre">C.F.S. El Vigía</field>
+		<field name="ubicacion">Calle Principal Urb. Buenos Aires. El Vigía. Frente Farmacia Buenos Aires</field>
+		<field name="telefono">0275-8814516</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MER"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MER_AAD"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MER_AAD_PRG"/>
+	</record>
+
+	<record id="cfs_BCN" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BCN</field>
+		<field name="nombre">C.F.S. Bicentenario</field>
+		<field name="ubicacion">Urb. JJ Osuna Rodríguez, Lo Curos, Mérida</field>
+		<field name="telefono">0274-2712198</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MER"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MER_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MER_LIB_OSR"/>
+	</record>
+
+	<record id="cfs_ALA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ALA</field>
+		<field name="nombre">C.F.S. Agrícola La Azulita</field>
+		<field name="ubicacion">Municipio Andrés Bello. Aldea Agua Blanca La Azulita Mérida a un Kmtro de la entrada Vía La Azulita</field>
+		<field name="telefono">0274-5110990</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MER"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MER_ABE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MER_ABE_LAA"/>
+	</record>
+
+	<record id="cfs_CME" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CME</field>
+		<field name="nombre">C.F.S. Comercial Merida</field>
+		<field name="ubicacion">Sector Santa Elena, Municipio Libertador, Parroquia Domingo Peña . Mérida</field>
+		<field name="telefono">0274-2712198</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MER"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MER_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MER_LIB_DOP"/>
+	</record>
+
+	<record id="cfs_EYE" model="sisr.base.dependencia_cfs">
+		<field name="codigo">EYE</field>
+		<field name="nombre">C.F.S. Electricidad y Electrónica</field>
+		<field name="ubicacion">3º Trans. Los Cortijos  de Lourdes Edificio INCES Frente a La Coca  Cola</field>
+		<field name="telefono">0212-2382725</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_SUC_LEM"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_DES" model="sisr.base.dependencia_cfs">
+		<field name="codigo">DES</field>
+		<field name="nombre">C.F.S. Del Este</field>
+		<field name="ubicacion">Av. Principal Las Industria. Palo Verde  Petare</field>
+		<field name="telefono">0212-2516567</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_SUC_PET"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_CFA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CFA</field>
+		<field name="nombre">C.F.S. Ciudad Fajardo</field>
+		<field name="ubicacion">Av. Intercomunal Guarenas - Guatire. Frente a Urb. Trapichito. Edificio INCES</field>
+		<field name="telefono">0212-3612643</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_PLA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_PLA_GUA"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_CGU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CGU</field>
+		<field name="nombre">C.F.S. Construcción Guarenas</field>
+		<field name="ubicacion">Urb. Oropeza Castillo, Vicente Emilio Sojo. Frente a Bloque 38. Guarenas</field>
+		<field name="telefono">0212-3629657</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_PLA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_PLA_GUA"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_LUR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LUR</field>
+		<field name="nombre">C.F.S. La Urbina</field>
+		<field name="ubicacion">Calle 12. La Urbina, Edf. INCES al lado del Stadium Héctor Ross</field>
+		<field name="telefono">0212-2427172</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_SUC_PET"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_LRU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LRU</field>
+		<field name="nombre">C.F.S. Los Ruices</field>
+		<field name="ubicacion">Av. Francisco De Miranda. Edif INCES,  al lado de la Estación del Metro</field>
+		<field name="telefono">0212-2396822</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_SUC_LEM"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_GGU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">GGU</field>
+		<field name="nombre">C.F.S. Guarenas Guatire</field>
+		<field name="ubicacion">Urb. 27 De Febrero Antigua Menca De Leoni, Frente al Bloque 52 Y 53, 2da Av. Guaren</field>
+		<field name="telefono">0212-3638212</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_PLA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_PLA_GUA"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_CCU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CCU</field>
+		<field name="nombre">C.F.S. Construccion Cua</field>
+		<field name="ubicacion">Km 1 Carretera Cua - Ocumare, vía Sta. Barbara 200 Mts Terminal Pasajeros Cúa</field>
+		<field name="telefono">0239-2124491</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_URD"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_URD_CUA"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_ITM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ITM</field>
+		<field name="nombre">C.F.S. Industrial Textil Miranda</field>
+		<field name="ubicacion">2da Transversal Los Cortijos De Lourdes. Edificios INCES, Planta Baja</field>
+		<field name="telefono">0212-2390564</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_SUC_LEM"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_COL" model="sisr.base.dependencia_cfs">
+		<field name="codigo">COL</field>
+		<field name="nombre">C.F.S. COLOMBEIA</field>
+		<field name="ubicacion">2da Transversal Los Cortijos. Edf. INCES Planta Baja</field>
+		<field name="telefono">0212-2358194</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_SUC_LEM"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_EZA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">EZA</field>
+		<field name="nombre">C.F.S. Ezequiel Zamora</field>
+		<field name="ubicacion">Carretera Vieja Charallave - Ocumare, Sector Pitahaya, Zona Industrial La Zamurera</field>
+		<field name="telefono">0239-9927157</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_CRO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_CRO_CHA"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_LTE" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LTE</field>
+		<field name="nombre">C.F.S. Los Teques</field>
+		<field name="ubicacion">Av. Ali Primera, Casa Sindical Los Teques</field>
+		<field name="telefono">0212-3226120</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MIR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MIR_GUA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MIR_GUA_LOT"/>
+        <field name="gerencia_regional_id" ref="ger_MIR"/>
+	</record>
+
+	<record id="cfs_SRO" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SRO</field>
+		<field name="nombre">C.F.S. Simón Rodríguez</field>
+		<field name="ubicacion">Av. Principal Las Cocuizas, sector Las Cocuizas Edif INCES</field>
+		<field name="telefono">0291-6429929</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MON"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MON_MAT"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MON_MAT_LAC"/>
+	</record>
+
+	<record id="cfs_EZQ" model="sisr.base.dependencia_cfs">
+		<field name="codigo">EZQ</field>
+		<field name="nombre">C.F.S. Ezequiel Zamora</field>
+		<field name="ubicacion">Calle Las Majaguas, a 100 Metros de la Escuela De La Guardia Nacional</field>
+		<field name="telefono">0292-3372916</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MON"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MON_EZA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MON_EZA_PDM"/>
+	</record>
+
+	<record id="cfs_JLA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JLA</field>
+		<field name="nombre">C.F.S. Juana La Avanzadora</field>
+		<field name="ubicacion">Parque Conafin Las Cocuizas. Detrás de la Imprenta del Estado</field>
+		<field name="telefono">0291-6438367</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_MON"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_MON_MAT"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_MON_MAT_LAC"/>
+	</record>
+
+	<record id="cfs_LBE" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LBE</field>
+		<field name="nombre">C.F.S.  Dr. Luis Beltran Prieto Figueroa</field>
+		<field name="ubicacion">Calle INCES Mar. Los Cocos</field>
+		<field name="telefono">0295-2745286</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_NVA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_NVA_SMA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_NVA_SMA_POR"/>
+	</record>
+
+	<record id="cfs_GUA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">GUA</field>
+		<field name="nombre">C.F.S. Guaraguo</field>
+		<field name="ubicacion">Final Paseo Rómulo Gallegos. Sector  Guaraguao</field>
+		<field name="telefono">0295-2635977</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_NVA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_NVA_SMA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_NVA_SMA_POR"/>
+	</record>
+
+	<record id="cfs_CSJ" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CSJ</field>
+		<field name="nombre">C.F.S. Construccion San Juan Bautista Arismendi</field>
+		<field name="ubicacion">Calle El Progreso Sector El Espinal, al lado de La Aldea Universitaria</field>
+		<field name="telefono">0295-2971930</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_NVA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_NVA_DIA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_NVA_DIA_ZAB"/>
+	</record>
+
+	<record id="cfs_PPL" model="sisr.base.dependencia_cfs">
+		<field name="codigo">PPL</field>
+		<field name="nombre">C.F.S. Pesquero La Playa</field>
+		<field name="ubicacion">Calle La Playa. Sector Los Cocos. Porlamar</field>
+		<field name="telefono">0295-2745578</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_NVA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_NVA_SMA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_NVA_SMA_POR"/>
+	</record>
+
+	<record id="cfs_JGR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JGR</field>
+		<field name="nombre">C.F.S. Juan Griego</field>
+		<field name="ubicacion">Calle Buena Vista - Juan Griego</field>
+		<field name="telefono">0295-2531427</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_NVA"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_NVA_MAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_NVA_MAR_JUA"/>
+	</record>
+
+	<record id="cfs_AIN" model="sisr.base.dependencia_cfs">
+		<field name="codigo">AIN</field>
+		<field name="nombre">C.F.S. Araure (INDUSTRIAL)</field>
+		<field name="ubicacion">Av. Principal Urbanización Baraure I. Edif INCES</field>
+		<field name="telefono">0255-6217045</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_POR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_POR_ARA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_POR_ARA_ARA"/>
+	</record>
+
+	<record id="cfs_ARA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ARA</field>
+		<field name="nombre">C.F.S  Araure</field>
+		<field name="ubicacion">Av. Principal Urbanización Baraure I. Edif INCES</field>
+		<field name="telefono">0255-6216167</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_POR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_POR_ARA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_POR_ARA_ARA"/>
+	</record>
+
+	<record id="cfs_PPD" model="sisr.base.dependencia_cfs">
+		<field name="codigo">PPD</field>
+		<field name="nombre">C.F.S. Pedro Pérez Delgado</field>
+		<field name="ubicacion">Barrio Maturin, Calle 7, detrás del Liceo José Vicente Unda</field>
+		<field name="telefono">0257-2516514</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_POR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_POR_GUA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_POR_GUA_GUA"/>
+	</record>
+
+	<record id="cfs_ATA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ATA</field>
+		<field name="nombre">C.F.S. Atapaima</field>
+		<field name="ubicacion">Km. 5. Vía Sistema de Riego Las Majaguas. Al lado de la Escuela Técnica Agua Blanca</field>
+		<field name="telefono">0257-2515994</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_POR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_POR_GUA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_POR_GUA_GUA"/>
+	</record>
+
+	<record id="cfs_ARP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ARP</field>
+		<field name="nombre">C.F.S. Ali Rafael Primera Rosell</field>
+		<field name="ubicacion">Av. Principal Baraure I. Araure</field>
+		<field name="telefono">0255-6217814</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_POR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_POR_ARA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_POR_ARA_ARA"/>
+	</record>
+
+	<record id="cfs_BOL" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BOL</field>
+		<field name="nombre">C.F.S. Bolivariano</field>
+		<field name="ubicacion">Barrio Bolivariano, Frente a la Urbanización. Cumaná Segunda</field>
+		<field name="telefono">0293-4516757</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_SUC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_SUC_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_SUC_SUC_ALT"/>
+	</record>
+
+	<record id="cfs_CUM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CUM</field>
+		<field name="nombre">C.F.S. Cumaná</field>
+		<field name="ubicacion">Entre Calle Bolívar con Bompland. Diagonal al Hospital Antonio Patricio De Alcala</field>
+		<field name="telefono">0293-4317106</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_SUC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_SUC_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_SUC_SUC_VAV"/>
+	</record>
+
+	<record id="cfs_CRU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CRU</field>
+		<field name="nombre">C.F.S. Carupano</field>
+		<field name="ubicacion">Edificio INCES, Calle San José, Barrio 19 de Abril, vía Canchunchu Viejo. Carúpano</field>
+		<field name="telefono">0294-3324353</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_SUC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_SUC_BER"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_SUC_BER_SAC"/>
+	</record>
+
+	<record id="cfs_ATU" model="sisr.base.dependencia_cfs">
+		<field name="codigo">ATU</field>
+		<field name="nombre">C.F.S. Agrícola  Tunapuy</field>
+		<field name="ubicacion">Sector Tunapuy. Carretera Nacional vía Güiria</field>
+		<field name="telefono">0294-6669110</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_SUC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_SUC_LIB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_SUC_LIB_TUN"/>
+	</record>
+
+	<record id="cfs_BRA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BRA</field>
+		<field name="nombre">C.F.S. Brasil</field>
+		<field name="ubicacion">Barrio Brasil II, Av. 5 a lado de La Iglesia. Cumaná</field>
+		<field name="telefono">0293-4519377</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_SUC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_SUC_SUC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_SUC_SUC_ALT"/>
+	</record>
+
+	<record id="cfs_PAB" model="sisr.base.dependencia_cfs">
+		<field name="codigo">PAB</field>
+		<field name="nombre">C.F.S. Pesquera Almirante Brión</field>
+		<field name="ubicacion">Calle Monagas, frente al Hospital. Güiria</field>
+		<field name="telefono">0294-9821126</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_SUC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_SUC_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_SUC_VAL_GUI"/>
+	</record>
+
+	<record id="cfs_EDS" model="sisr.base.dependencia_cfs">
+		<field name="codigo">EDS</field>
+		<field name="nombre">C.F.S. Prof. Emiro Duque Sánchez</field>
+		<field name="ubicacion">Av. 19 De Abril. Edif. INCES. La Concordia. San Cristóbal</field>
+		<field name="telefono">0276-3476448</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TAC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TAC_SCR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TAC_SCR_LCO"/>
+	</record>
+
+	<record id="cfs_LUB" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LUB</field>
+		<field name="nombre">C.F.S. Dr. Luis Beltrán Prieto Figueroa</field>
+		<field name="ubicacion">Calle 3. Entre Carreras 3 y 4. La Concordia. San Cristóbal</field>
+		<field name="telefono">0276-3476885</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TAC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TAC_SCR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TAC_SCR_LCO"/>
+	</record>
+
+	<record id="cfs_CCA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CCA</field>
+		<field name="nombre">C.F.S. Cipriano Castro</field>
+		<field name="ubicacion">Zona Industrial De Paramillo. Antiguos Galpones Corpomercadeo. San Cristóbal</field>
+		<field name="telefono">0276-3564972</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TAC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TAC_SCR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TAC_SCR_SJB"/>
+	</record>
+
+	<record id="cfs_SRD" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SRD</field>
+		<field name="nombre">C.F.S. Simón Rodríguez</field>
+		<field name="ubicacion">Final Av. Los Agustinos. Principal De Paramillo. Manzana K. San Cristobal</field>
+		<field name="telefono">0276-3564985</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TAC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TAC_SCR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TAC_SCR_SJB"/>
+	</record>
+
+	<record id="cfs_NPR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">NPR</field>
+		<field name="nombre">C.F.S. Negro Primero</field>
+		<field name="ubicacion">Carrera 13 entre Calle 13 y 14, Barrio Monseñor Briceño Méndez, detrás de Escuela Bolivariana Monseñor Briceño, Tariba</field>
+		<field name="telefono">0276-3464972</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TAC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TAC_CAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TAC_CAR_CAR"/>
+	</record>
+
+	<record id="cfs_FCM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">FCM</field>
+		<field name="nombre">C.F.S. Francisco De Miranda</field>
+		<field name="ubicacion">Carrera 13  con calle 3 detrás del Ciclo Básico San Antonio</field>
+		<field name="telefono">0276 -7715521</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TAC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TAC_BOL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TAC_BOL_TAC"/>
+	</record>
+
+	<record id="cfs_MDI" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MDI</field>
+		<field name="nombre">C.F.S. Mario Briceño Iragorry</field>
+		<field name="ubicacion">Calle 9 Esquina Carrera 6 Urb. Rómulo Gallegos, Aguas Calientes Ureña</field>
+		<field name="telefono"></field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TAC"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TAC_PMU"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TAC_PMU_URE"/>
+	</record>
+
+	<record id="cfs_APM" model="sisr.base.dependencia_cfs">
+		<field name="codigo">APM</field>
+		<field name="nombre">C.F.S. Alí Primera</field>
+		<field name="ubicacion">Sector Mirabel Plata I. Av. Maya y México Diagonal al terminal de Pasajeros</field>
+		<field name="telefono">0271-2253095</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TRU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TRU_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TRU_VAL_JIM"/>
+	</record>
+
+	<record id="cfs_SRG" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SRG</field>
+		<field name="nombre">C.F.S. Samuel Robinson</field>
+		<field name="ubicacion">Av. Carlos José Miliani. sector Parque Ferial Boconó</field>
+		<field name="telefono">0272-4151202</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TRU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TRU_BOC"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TRU_BOC_BOC"/>
+	</record>
+
+	<record id="cfs_JMA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">JMA</field>
+		<field name="nombre">C.F.S. José Martí</field>
+		<field name="ubicacion">San Luis, sector  Los Manguitos. Final de la calle principal, al lado de Barrio Adentro</field>
+		<field name="telefono">0271-2212434</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TRU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TRU_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TRU_VAL_SAL"/>
+	</record>
+
+	<record id="cfs_BDT" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BDT</field>
+		<field name="nombre">C.F.S. Barbarita De La Torre</field>
+		<field name="ubicacion">Av. Bolívar entre Calle 5 y Rio De Janeiro, Alto Edificios Cestari A</field>
+		<field name="telefono">0271-2256916</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_TRU"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_TRU_VAL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_TRU_VAL_JIM"/>
+	</record>
+
+	<record id="cfs_CAT" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CAT</field>
+		<field name="nombre">C.F.S. Cataure</field>
+		<field name="ubicacion">Parcela Nº 61, Sector La Hacienda, De La Comunidad Rural Cataure</field>
+		<field name="telefono"></field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_VAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_VAR_VAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_VAR_VAR_CAA"/>
+	</record>
+
+	<record id="cfs_VAR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">VAR</field>
+		<field name="nombre">C.F.S. Vargas</field>
+		<field name="ubicacion">Av. La Playa - Bajada El Playon,  Sector Camuri Chico Caraballeda, al Lado Del CDI</field>
+		<field name="telefono">0212-4141288</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_VAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_VAR_VAR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_VAR_VAR_MAC"/>
+	</record>
+
+	<record id="cfs_SFF" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SFF</field>
+		<field name="nombre">C.F.S. San Felipe El Fuerte</field>
+		<field name="ubicacion">Av. La Paz San Felipe, frente al Parque Severiano Jiménez</field>
+		<field name="telefono">0254-2320443</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_YAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_YAR_SFE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_YAR_SFE_SAF"/>
+	</record>
+
+	<record id="cfs_PVA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">PVA</field>
+		<field name="nombre">C.F.S. Prudencio Vasquéz</field>
+		<field name="ubicacion">Autopista Centro-Occidental via Aguaruca, diagonal al Epsi Bravo Cacique Yaracuy</field>
+		<field name="telefono">0426-7074003</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_YAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_YAR_URA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_YAR_URA_URA"/>
+	</record>
+
+	<record id="cfs_MCE" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MCE</field>
+		<field name="nombre">C.F.S. Manuel Cedeño</field>
+		<field name="ubicacion">Av. Cedeño con Callejon San Miguel San Felipe</field>
+		<field name="telefono">0254-2343724</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_YAR"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_YAR_SFE"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_YAR_SFE_SAF"/>
+	</record>
+
+	<record id="cfs_IMH" model="sisr.base.dependencia_cfs">
+		<field name="codigo">IMH</field>
+		<field name="nombre">C.F.S. Industrial Maracaibo Los Haticos</field>
+		<field name="ubicacion">Av. 18 Calle 108 Nº115-48 Sector La Milagrosa - Los Haticos</field>
+		<field name="telefono">0261-7228474</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_MBO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_MBO_CDA"/>
+	</record>
+
+	<record id="cfs_AGR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">AGR</field>
+		<field name="nombre">C.F.S. Artes Gráficas</field>
+		<field name="ubicacion">Av. Bella Vista 4. Entre Calle 81 y 82</field>
+		<field name="telefono">0261-7917351</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_MBO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_MBO_SLU"/>
+	</record>
+
+	<record id="cfs_CAB" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CAB</field>
+		<field name="nombre">C.F.S. Cabimas</field>
+		<field name="ubicacion">Calle Yaracuy con Carabobo. Sector Delicias Nuevas al lado de la Escuela Bompland</field>
+		<field name="telefono">0264-2513762</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_CAB"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_CAB_AMB"/>
+	</record>
+
+	<record id="cfs_COJ" model="sisr.base.dependencia_cfs">
+		<field name="codigo">COJ</field>
+		<field name="nombre">C.F.S. Ciudad Ojeda</field>
+		<field name="ubicacion">Carretera N.  Km. 4  Zona Industrial. Al lado Asociación De Lagunillas</field>
+		<field name="telefono">0265-6413984</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_LAG"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_LAG_ADO"/>
+	</record>
+
+	<record id="cfs_VDR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">VDR</field>
+		<field name="nombre">C.F.S. Villa Del Rosario</field>
+		<field name="ubicacion">C/ Adolfo López entre Esquina Registro y El Márquez Villa Del Rosario Diagonal A Enelven</field>
+		<field name="telefono">0263-4512518</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_RDP"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_RDP_ERO"/>
+	</record>
+
+	<record id="cfs_BVL" model="sisr.base.dependencia_cfs">
+		<field name="codigo">BVL</field>
+		<field name="nombre">C.F.S.  Bella Vista II</field>
+		<field name="ubicacion">Av. 4 Calle 87 y 88 (Av. Bella Vista)</field>
+		<field name="telefono">0261-7227145</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_MBO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_MBO_SLU"/>
+	</record>
+
+	<record id="cfs_CSB" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CSB</field>
+		<field name="nombre">C.F.S. Comercial Santa Barbara</field>
+		<field name="ubicacion">Santa Barbara Del Zulia. Calle 1. Nº 3-15 frente al Terminal De Encontrados San Carlos Zulia</field>
+		<field name="telefono">0275-5552509</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_COL"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_COL_SCZ"/>
+	</record>
+
+	<record id="cfs_SFR" model="sisr.base.dependencia_cfs">
+		<field name="codigo">SFR</field>
+		<field name="nombre">C.F.S. San Francisco</field>
+		<field name="ubicacion">Municipio San Francisco, Km 6,5 vía Perijá, entrando por maquinarias Masking, Parroquia, Marcial Hernández</field>
+		<field name="telefono">0261-5250142</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_SFR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_SFR_MHE"/>
+	</record>
+
+	<record id="cfs_LPA" model="sisr.base.dependencia_cfs">
+		<field name="codigo">LPA</field>
+		<field name="nombre">C.F.S. Los Puertos De Altagracia</field>
+		<field name="ubicacion">Av. Los Puertos De Altagracia Calle 11 entre Av. 4 y 5 diagonal Casa De La Cultura Gabriel Bracho</field>
+		<field name="telefono">0266-3211124</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_MIR"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_MIR_ALT"/>
+	</record>
+
+	<record id="cfs_CMP" model="sisr.base.dependencia_cfs">
+		<field name="codigo">CMP</field>
+		<field name="nombre">C.F.S. Construcción Maracaibo Panamericano</field>
+		<field name="ubicacion">Av. 73 C/C 72 Barrio Panamericano</field>
+		<field name="telefono">0261-7549578</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_MBO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_MBO_CPP"/>
+	</record>
+
+	<record id="cfs_MMB" model="sisr.base.dependencia_cfs">
+		<field name="codigo">MMB</field>
+		<field name="nombre">C.F.S. Metalminero Maracaibo</field>
+		<field name="ubicacion">Calle 148 con Av. 67, 2da Etapa Zona Industrial Maracaibo</field>
+		<field name="telefono">0261-7361339</field>
+		<field name="observaciones"></field>
+		<field name="estado_id" ref="l10n_ve_dpt.geo_est_ZUL"/>
+		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_ZUL_MBO"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_ZUL_MBO_LHH"/>
+	</record>
+	
+	</data>
+</openerp>

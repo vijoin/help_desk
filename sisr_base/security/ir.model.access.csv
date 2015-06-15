@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_sisr_base_dependencia_gerencia","sisr.base.dependencia_gerencia","model_sisr_base_dependencia_gerencia","base.group_user",1,0,0,0
+"access_sisr_base_dependencia_direccion","sisr.base.dependencia_direccion","model_sisr_base_dependencia_direccion","base.group_user",1,0,0,0
+"access_sisr_base_dependencia_gerencia_linea","sisr.base.dependencia_gerencia_linea","model_sisr_base_dependencia_gerencia_linea","base.group_user",1,0,0,0
+"access_sisr_base_dependencia_division","sisr.base.dependencia_division","model_sisr_base_dependencia_division","base.group_user",1,0,0,0
+"access_sisr_base_dependencia_coordinacion","sisr.base.dependencia_coordinacion","model_sisr_base_dependencia_coordinacion","base.group_user",1,0,0,0
+"access_sisr_base_dependencia_cfs","sisr.base.dependencia_cfs","model_sisr_base_dependencia_cfs","base.group_user",1,0,0,0
+"access_sisr_base_hr_cargo","sisr.base.hr_cargo","model_sisr_base_hr_cargo","base.group_user",1,0,0,0

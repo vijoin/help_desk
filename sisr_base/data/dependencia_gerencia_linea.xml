@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		  
+	<!-- Gerencias de Línea -->
+	<record id="ger_INF_SIS" model="sisr.base.dependencia_gerencia_linea">
+		<field name="codigo">GER_INF_SIS</field>
+		<field name="nombre">Sistemas</field>
+		<field name="ubicacion">Av. Nueva Granada, Edificio Inces, Piso 1</field>
+        <field name="direccion_id" ref="ger_INF"/>
+	</record>
+
+	<record id="ger_INF_OPE" model="sisr.base.dependencia_gerencia_linea">
+		<field name="codigo">GER_INF_OPE</field>
+		<field name="nombre">Operaciones</field>
+		<field name="ubicacion">Av. Nueva Granada, Edificio Inces, Piso 1</field>
+        <field name="direccion_id" ref="ger_INF"/>
+	</record>
+	
+	</data>
+</openerp>

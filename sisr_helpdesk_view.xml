@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_sisr_helpdesk_incidencia_form">
+        <field name="name">sisr.helpdesk.incidencia.form</field>
+        <field name="model">sisr.helpdesk.incidencia</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="sisr.helpdesk.incidencia">
+            <group col="4" colspan="2">
+                <field name="solicitante" select="1"/>
+                <field name="area_incidencia_id" select="2"/>
+                <field name="tipo_incidencia_ids" select="0"/>
+                <field name="state" select="0"/>
+                <field name="observacion_ids" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_sisr_helpdesk_incidencia_tree">
+        <field name="name">sisr.helpdesk.incidencia.tree</field>
+        <field name="model">sisr.helpdesk.incidencia</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="sisr.helpdesk.incidencia">
+                <field name="solicitante"/>
+                <field name="area_incidencia_id"/>
+                <field name="state"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_sisr_helpdesk_incidencia">
+        <field name="name">Incidencia</field>
+        <field name="res_model">sisr.helpdesk.incidencia</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        
+    <record model="ir.ui.view" id="view_sisr_helpdesk_tipo_incidencia_form">
+        <field name="name">sisr.helpdesk.tipo_incidencia.form</field>
+        <field name="model">sisr.helpdesk.tipo_incidencia</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="sisr.helpdesk.tipo_incidencia">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="nombre" select="2"/>
+                <field name="incidencia_ids" select="0"/>
+                <field name="area_incidencia_id" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_sisr_helpdesk_tipo_incidencia_tree">
+        <field name="name">sisr.helpdesk.tipo_incidencia.tree</field>
+        <field name="model">sisr.helpdesk.tipo_incidencia</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="sisr.helpdesk.tipo_incidencia">
+                <field name="codigo"/>
+                <field name="nombre"/>
+                <field name="area_incidencia_id"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_sisr_helpdesk_tipo_incidencia">
+        <field name="name">Tipo de Incidencia</field>
+        <field name="res_model">sisr.helpdesk.tipo_incidencia</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        
+    <record model="ir.ui.view" id="view_sisr_helpdesk_solicitante_form">
+        <field name="name">sisr.helpdesk.solicitante.form</field>
+        <field name="model">sisr.helpdesk.solicitante</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="sisr.helpdesk.solicitante">
+            <group col="4" colspan="2">
+                <field name="cedula" select="1"/>
+                <field name="Nombres" select="2"/>
+                <field name="Apellidos" select="0"/>
+                <field name="cargo" select="0"/>
+                <field name="dependencia_direccion_id" select="0"/>
+                <field name="dependencia_gerencia_id" select="0"/>
+                <field name="dependencia_gerencia_linea_id" select="0"/>
+                <field name="dependencia_cfs_id" select="0"/>
+                <field name="dependencia_division_id" select="0"/>
+                <field name="dependencia_coordinacion_id" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_sisr_helpdesk_solicitante_tree">
+        <field name="name">sisr.helpdesk.solicitante.tree</field>
+        <field name="model">sisr.helpdesk.solicitante</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="sisr.helpdesk.solicitante">
+                <field name="cedula"/>
+                <field name="Nombres"/>
+                <field name="Apellidos"/>
+                <field name="cargo"/>
+                <field name="dependencia_direccion_id"/>
+                <field name="dependencia_gerencia_id"/>
+                <field name="dependencia_gerencia_linea_id"/>
+                <field name="dependencia_cfs_id"/>
+                <field name="dependencia_division_id"/>
+                <field name="dependencia_coordinacion_id"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_sisr_helpdesk_solicitante">
+        <field name="name">Solicitante</field>
+        <field name="res_model">sisr.helpdesk.solicitante</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        
+    <record model="ir.ui.view" id="view_sisr_helpdesk_area_incidencia_form">
+        <field name="name">sisr.helpdesk.area_incidencia.form</field>
+        <field name="model">sisr.helpdesk.area_incidencia</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="sisr.helpdesk.area_incidencia">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="nombre" select="2"/>
+                <field name="tipo_incidencia" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_sisr_helpdesk_area_incidencia_tree">
+        <field name="name">sisr.helpdesk.area_incidencia.tree</field>
+        <field name="model">sisr.helpdesk.area_incidencia</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="sisr.helpdesk.area_incidencia">
+                <field name="codigo"/>
+                <field name="nombre"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_sisr_helpdesk_area_incidencia">
+        <field name="name">Área de Incidencia</field>
+        <field name="res_model">sisr.helpdesk.area_incidencia</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+        
+    <record model="ir.ui.view" id="view_sisr_helpdesk_observacion_form">
+        <field name="name">sisr.helpdesk.observacion.form</field>
+        <field name="model">sisr.helpdesk.observacion</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="sisr.helpdesk.observacion">
+            <group col="4" colspan="2">
+                <field name="observacion" select="1"/>
+                <field name="state_rel" select="2"/>
+                <field name="incidencia_id" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_sisr_helpdesk_observacion_tree">
+        <field name="name">sisr.helpdesk.observacion.tree</field>
+        <field name="model">sisr.helpdesk.observacion</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="sisr.helpdesk.observacion">
+                <field name="observacion"/>
+                <field name="state_rel"/>
+                <field name="incidencia_id"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_sisr_helpdesk_observacion">
+        <field name="name">Observación</field>
+        <field name="res_model">sisr.helpdesk.observacion</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+<menuitem name="Help Desk" id="menu_sisr_helpdesk"/>
+<menuitem name="Formularios" id="menu_sisr_helpdesk_formularios" parent="menu_sisr_helpdesk"/>
+    <menuitem name="Incidencia" id="menu_sisr_helpdesk_incidencia" action="action_sisr_helpdesk_incidencia" parent="menu_sisr_helpdesk_formularios"/>
+    <menuitem name="Solicitante" id="menu_sisr_helpdesk_solicitante" action="action_sisr_helpdesk_solicitante" parent="menu_sisr_helpdesk_formularios"/>
+    <menuitem name="Observación" id="menu_sisr_helpdesk_observacion" action="action_sisr_helpdesk_observacion" parent="menu_sisr_helpdesk_formularios"/>
+
+<menuitem name="Configuración" id="menu_sisr_helpdesk_configuracion" parent="menu_sisr_helpdesk"/>
+    <menuitem name="Tipo de Incidencia" id="menu_sisr_helpdesk_tipo_incidencia" action="action_sisr_helpdesk_tipo_incidencia" parent="menu_sisr_helpdesk_configuracion"/>
+    <menuitem name="Área de Incidencia" id="menu_sisr_helpdesk_area_incidencia" action="action_sisr_helpdesk_area_incidencia" parent="menu_sisr_helpdesk_configuracion"/>
+
+
+        
+</data>
+</openerp>

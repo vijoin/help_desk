@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		  
+	<!-- Gerencias Generales y Regionales -->
+	<record id="ger_FIN" model="sisr.base.dependencia_gerencia">
+		<field name="codigo">GER_FIN</field>
+        <field name="tipo">general</field>
+		<field name="nombre">Finanzas</field>
+		<field name="ubicacion">Av. Nueva Granada, Edificio Inces, Piso 2</field>
+        <field name="direccion_id" ref="dir_PRE"/>
+	</record>
+    
+    <record id="ger_INF" model="sisr.base.dependencia_gerencia">
+		<field name="codigo">GER_INF</field>
+        <field name="tipo">general</field>
+		<field name="nombre">Informática</field>
+		<field name="ubicacion">Av. Nueva Granada, Edificio Inces, Piso 1</field>
+        <field name="direccion_id" ref="dir_PRE"/>
+	</record>
+
+    <record id="ger_COJ" model="sisr.base.dependencia_gerencia">
+		<field name="codigo">GER_COJ</field>
+        <field name="tipo">regional</field>
+		<field name="nombre">Regional Cojedes</field>
+		<field name="ubicacion">Inces Agrícola Jose Laurencio Silva, Vía Las Vegas, Sector El Limón. San Carlos. Cojedes</field>
+        <field name="direccion_id" ref="dir_PRE"/>
+	</record>
+    
+    <record id="ger_MIR" model="sisr.base.dependencia_gerencia">
+		<field name="codigo">GER_MIR</field>
+        <field name="tipo">regional</field>
+		<field name="nombre">Miranda</field>
+		<field name="ubicacion">2da Transversal Av. Principipal Los Cortijos. Edificio Colombeia, Piso 2. Los Cortijos de Lourdes, Municipio Sucre.</field>
+        <field name="direccion_id" ref="dir_PRE"/>
+	</record>
+	
+	</data>
+</openerp>
