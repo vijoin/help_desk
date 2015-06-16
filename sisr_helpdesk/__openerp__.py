@@ -29,6 +29,6 @@
         "depends" : ['base','l10n_ve_dpt','sisr_base'],
         "init_xml" : [ ],
         "demo_xml" : [ ],
-        "update_xml" : ['sisr_helpdesk_view.xml', 'security/ir.model.access.csv'],
+        "update_xml" : ['sisr_helpdesk_view.xml', 'security/ir.model.access.csv', 'incidencia_codigo_sequence.xml'],
         "installable": True
 }

@@ -22,6 +22,7 @@
 from openerp.osv import fields,osv
 
 class sisr_helpdesk_incidencia(osv.osv):
+    
     _name = 'sisr.helpdesk.incidencia'
     _columns = {
         'codigo': fields.char('Código', size=10, help="Código de la Incidencia"),
@@ -31,6 +32,9 @@ class sisr_helpdesk_incidencia(osv.osv):
         'state': fields.selection([('borrador','Borrador'),('resuelto','Resuelto'),('asignado','Asignado'),('cancelado','Cancelado'),('revision','En Revisión')], string="Status", default="borrador"),
         'observacion_ids': fields.one2many('sisr.helpdesk.observacion', 'incidencia_id', string="Observaciones", help='Observaciones de una incidencia'),
     }
+    
+    _defaults = { 'codigo': lambda self,cr,uid,context={}: self.pool.get('ir.sequence').get(cr, uid, 'sisr.helpdesk.incidencia'), }
+    
 sisr_helpdesk_incidencia()
 
 class sisr_helpdesk_tipo_incidencia(osv.osv):
