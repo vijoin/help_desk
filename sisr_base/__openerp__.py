@@ -29,6 +29,6 @@
         "depends" : ['base'],
         "init_xml" : [ ],
         "demo_xml" : [ ],
-        "update_xml" : ['sisr_base_view.xml', 'security/ir.model.access.csv','data/cfs.xml','data/dependencia_direcciones.xml','data/dependencia_gerencia.xml','data/dependencia_gerencia_linea.xml'],
+        "update_xml" : ['sisr_base_view.xml', 'security/ir.model.access.csv','data/dependencia_direcciones.xml','data/dependencia_gerencia.xml','data/dependencia_gerencia_linea.xml','data/cfs.xml'],
         "installable": True
 }
