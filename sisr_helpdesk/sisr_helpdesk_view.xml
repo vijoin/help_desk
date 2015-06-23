@@ -13,9 +13,10 @@
                 </header>
             <sheet>
             <group col="4" colspan="2">
+                <field name="fecha_creacion" select="1" readonly="True"/>
                 <field name="codigo" select="1" readonly="True"/>
                 <field name="area_incidencia_id" select="2"/>
-                <field name="solicitante_id" colspan="4" select="1"/>
+                <field name="solicitante_id" select="1"/>
                 <separator string="Tipos de Incidencias" colspan="4"/>
                 <field name="tipo_incidencia_ids" nolabel="1" colspan="4" select="0"/>
                 <separator string="Observaciones" colspan="4"/>
@@ -36,6 +37,7 @@
         <field name="type">tree</field>
         <field name="arch" type="xml">
             <tree string="sisr.helpdesk.incidencia">
+                <field name="fecha_creacion"/>
                 <field name="codigo"/>
                 <field name="solicitante_id"/>
                 <field name="area_incidencia_id"/>
