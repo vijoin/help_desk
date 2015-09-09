@@ -29,6 +29,6 @@
         "depends" : ['base'],
         "init_xml" : [ ],
         "demo_xml" : [ ],
-        "update_xml" : ['sisr_helpdesk_view.xml','security/res.groups.xml', 'security/ir.model.access.csv'],
+        "update_xml" : ['sisr_helpdesk_view.xml','security/res.groups.xml', 'security/ir.model.access.csv','security/ir.rule.xml'],
         "installable": True
 }
