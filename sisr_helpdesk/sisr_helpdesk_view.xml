@@ -16,6 +16,8 @@
             <sheet>
             <group col="4" colspan="2">
                 <field name="codigo" select="1" readonly="1"/>
+		<newline/>
+		<field name="dependencia_id" select="0"/>
                 <field name="area_incidencia_id" select="2"/>
                 <field name="solicitante_id" colspan="4" select="1"/>
 		<field name="asignacion" colspan="4" select="1"/>

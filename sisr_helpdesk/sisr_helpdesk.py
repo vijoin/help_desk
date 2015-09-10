@@ -29,6 +29,7 @@ class sisr_helpdesk_incidencia(osv.osv):
     _columns = {
         'codigo': fields.char('Código', size=10, help="Código de la Incidencia"),
         'solicitante_id': fields.many2one('sisr.helpdesk.solicitante', string="Solicitante", help='Nombre Completo del Solicitante de la Incidencia'),
+        'dependencia_id': fields.many2one('sisr.base.dependencia_gerencia','Dependencia'),
         'area_incidencia_id': fields.many2one('sisr.helpdesk.area_incidencia', string="Área de Incidencia"),
         'tipo_incidencia_ids': fields.many2many('sisr.helpdesk.tipo_incidencia', 'incidencia_tipoincidencia_rel','incidencia_id', 'tipo_incidencia_id', string="Tipo de Incidencia"),
         'state': fields.selection([('borrador','Borrador'),('resuelto','Resuelto'),('asignado','Asignado'),('cancelado','Cancelado'),('revision','En Revisión')], string="Status", default="borrador"),
