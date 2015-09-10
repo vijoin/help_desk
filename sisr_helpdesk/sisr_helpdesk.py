@@ -39,12 +39,13 @@ class sisr_helpdesk_incidencia(osv.osv):
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
 	'fecha_solucion': fields.datetime('fecha de Solución'),    
 }
+
     def create(self, cr, uid, vals, context=None):
-        vals.update({'fecha_creacion':datetime.today()})
+        vals.update({'codigo':self.pool.get('ir.sequence').get(cr, uid, 'sisr.helpdesk.incidencia')})
+	vals.update({'fecha_creacion':datetime.today()})
         new_id = super(sisr_helpdesk_incidencia, self).create(cr, uid, vals, context=None)
         return new_id
-
-
+ 
 sisr_helpdesk_incidencia()
 
 class sisr_helpdesk_tipo_incidencia(osv.osv):
@@ -75,6 +76,7 @@ class sisr_helpdesk_solicitante(osv.osv):
         'email': fields.char(string="Correo Institucional", size=100, help='Correo Electrónico Institucional del solicitante'),
         'ext_telefono': fields.char(string="Extensión", size=5, help='Extensión Telefónica del Solicitante: Ej: 2066'),
         'telefono_personal': fields.char(string="Teléfono Personal", size=11, help='Telefóno Personal del Solicitante. Ej: 04261231234'),
+        'incidencia_ids': fields.one2many('sisr.helpdesk.incidencia', 'solicitante_id', 'Incidencias Asociadas'),
     }
 
     _sql_constraints = [('cedula_solicitante_uniq', 'unique(cedula)', 'Este solicitante ya ha sido registrado en el sistema (cedula repetida)')]    

@@ -15,7 +15,7 @@
                 </header>
             <sheet>
             <group col="4" colspan="2">
-                <field name="codigo" select="1"/>
+                <field name="codigo" select="1" readonly="1"/>
                 <field name="area_incidencia_id" select="2"/>
                 <field name="solicitante_id" colspan="4" select="1"/>
 		<field name="asignacion" colspan="4" select="1"/>
@@ -135,6 +135,11 @@
                 <field name="dependencia_cfs_id" select="0" required="True"/>
                 <field name="dependencia_division_id" select="0" required="True"/>
                 <field name="dependencia_coordinacion_id" select="0" required="True"/>
+            </group>
+            </page>
+	    <page string="Incidencias">
+            <group col="4" colspan="4" string="Incidencias Asociadas">
+                <field name="incidencia_ids" nolabel="1" select="0" required="True"/>
             </group>
             </page>
             </notebook>
