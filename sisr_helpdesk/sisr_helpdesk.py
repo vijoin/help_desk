@@ -76,6 +76,8 @@ class sisr_helpdesk_solicitante(osv.osv):
         'ext_telefono': fields.char(string="Extensión", size=5, help='Extensión Telefónica del Solicitante: Ej: 2066'),
         'telefono_personal': fields.char(string="Teléfono Personal", size=11, help='Telefóno Personal del Solicitante. Ej: 04261231234'),
     }
+
+    _sql_constraints = [('cedula_solicitante_uniq', 'unique(cedula)', 'Este solicitante ya ha sido registrado en el sistema (cedula repetida)')]    
     
     def name_get(self, cr, uid, ids, context=None):
         res = []
