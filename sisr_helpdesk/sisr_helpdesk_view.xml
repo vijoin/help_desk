@@ -11,7 +11,7 @@
         <field name="arch" type="xml">
             <form string="sisr.helpdesk.incidencia">
             <header>
-                    <field name="state" widget="statusbar" class="oe_right" select="0"/>
+                    <field name="state" widget="statusbar" clickable="1" class="oe_right" select="0"/>
                 </header>
             <sheet>
             <group col="4" colspan="2">
