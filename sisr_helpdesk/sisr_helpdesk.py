@@ -26,6 +26,7 @@ from datetime import date, datetime
 
 class sisr_helpdesk_incidencia(osv.osv):
     _name = 'sisr.helpdesk.incidencia'
+    _rec_name = 'codigo'
     _columns = {
         'codigo': fields.char('Código', size=10, help="Código de la Incidencia"),
         'solicitante_id': fields.many2one('sisr.helpdesk.solicitante', string="Solicitante", help='Nombre Completo del Solicitante de la Incidencia'),
@@ -63,6 +64,7 @@ sisr_helpdesk_tipo_incidencia()
 class sisr_helpdesk_solicitante(osv.osv):
     """Debería ser una Extensión de la clase hr.employee. Esta clase debe ir en sisr.base"""
     _name = 'sisr.helpdesk.solicitante'
+    _rec_name = 'cedula'
     _columns = {
         'cedula': fields.integer(string="Cédula", help='Cedula de Identidad del Solicitante'),
         'nombres': fields.char(string="Nombres", size=60, help='Nombres del Solicitante'),
