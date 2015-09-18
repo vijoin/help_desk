@@ -26,9 +26,9 @@
         "website" : "http://openerp.com",
         "category" : "Unknown",
         "description": """  """,
-        "depends" : ['base','l10n_ve_dpt','sisr_base'],
+        "depends" : ['base'],
         "init_xml" : [ ],
         "demo_xml" : [ ],
-        "update_xml" : ['sisr_helpdesk_view.xml', 'security/ir.model.access.csv', 'incidencia_codigo_sequence.xml'],
+        "update_xml" : ['sisr_helpdesk_view.xml','security/res.groups.xml', 'security/ir.model.access.csv','security/ir.rule.xml','incidencia_codigo_sequence.xml','data/area_incidencia.xml'],
         "installable": True
 }
