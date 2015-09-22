@@ -2,6 +2,8 @@
 <openerp>
 <data>
 
+
+
     <record model="ir.ui.view" id="view_sisr_helpdesk_incidencia_form">
         <field name="name">sisr.helpdesk.incidencia.form</field>
         <field name="model">sisr.helpdesk.incidencia</field>
@@ -9,16 +11,23 @@
         <field name="arch" type="xml">
             <form string="sisr.helpdesk.incidencia">
             <header>
-                    <field name="state" widget="statusbar" class="oe_right" select="0"/>
+                    <field name="state" widget="statusbar" clickable="1" class="oe_right" select="0"/>
                 </header>
             <sheet>
             <group col="4" colspan="2">
-                <field name="fecha_creacion" select="1" readonly="True"/>
-                <field name="codigo" select="1" readonly="True"/>
-                <field name="area_incidencia_id" select="2"/>
-                <field name="solicitante_id" select="1"/>
+                <field name="codigo" select="1" readonly="1"/>
+		<newline/>
+		<field name="dependencia_id" select="0"/>
+                <field name="area_incidencia_id" select="2" domain="[('dependencia_id','=',dependencia_id)]"/>
+                <field name="solicitante_id" colspan="4" select="1"/>
+		<field name="asignacion" colspan="4" select="1" domain="[('area_incidencia_id','=',area_incidencia_id)]"/>
+		<field name="denominacion" colspan="4" select="2"/>
+		<field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
+		<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
+		<separator string="Descrición" colspan="4"/>
+		<field name="descripcion" colspan="4" nolabel="1" select="0"/> 
                 <separator string="Tipos de Incidencias" colspan="4"/>
-                <field name="tipo_incidencia_ids" nolabel="1" colspan="4" select="0"/>
+                <field name="tipo_incidencia_ids" nolabel="1" colspan="4" select="0" domain="[('area_incidencia_id','=',area_incidencia_id)]"/>
                 <separator string="Observaciones" colspan="4"/>
                 <field name="observacion_ids" nolabel="1" colspan="4" select="0">
                     <tree editable="True">
@@ -37,10 +46,10 @@
         <field name="type">tree</field>
         <field name="arch" type="xml">
             <tree string="sisr.helpdesk.incidencia">
-                <field name="fecha_creacion"/>
                 <field name="codigo"/>
                 <field name="solicitante_id"/>
                 <field name="area_incidencia_id"/>
+		<field name="asignacion"/>
                 <field name="state"/>
 
             </tree>
@@ -49,6 +58,7 @@
     <record model="ir.actions.act_window" id="action_sisr_helpdesk_incidencia">
         <field name="name">Incidencia</field>
         <field name="res_model">sisr.helpdesk.incidencia</field>
+	<field name="domain">[]</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -61,7 +71,7 @@
         <field name="arch" type="xml">
             <form string="sisr.helpdesk.tipo_incidencia">
             <group col="4" colspan="2">
-                <field name="codigo" select="1"/>
+                <field name="codigo" select="1" />
                 <field name="nombre" select="2"/>
                 <field name="area_incidencia_id" select="0"/>
                 <separator string="Incidencias" colspan="4"/>
@@ -102,10 +112,10 @@
             <notebook>
             <page string="Personal">
             <group col="4" colspan="2">
-                <field name="cedula" select="1"/>
+                <field name="cedula" select="1" required="True"/>
                 <newline/>
-                <field name="nombres" select="2"/>
-                <field name="apellidos" select="0"/>
+                <field name="nombres" select="2" required="True"/>
+                <field name="apellidos" select="0" required="True"/>
             </group>
             </page>
 
@@ -119,14 +129,19 @@
             </page>
             
             <page string="Laboral">
-            <group col="2" colspan="2">
-                <field name="cargo" select="0"/>
-                <field name="dependencia_direccion_id" select="0"/>
-                <field name="dependencia_gerencia_id" select="0" domain="[('direccion_id','=',[dependencia_direccion_id])]" />
-                <field name="dependencia_gerencia_linea_id" select="0" domain="[('gerencia_general_id','=',[dependencia_gerencia_id])]" />
-                <field name="dependencia_cfs_id" select="0"/>
-                <field name="dependencia_division_id" select="0"/>
-                <field name="dependencia_coordinacion_id" select="0"/>
+            <group col="2" colspan="2" >
+                <field name="cargo" select="0" required="True"/>
+                <field name="dependencia_direccion_id" required="True" select="0" />
+                <field name="dependencia_gerencia_id" select="0" required="True" domain="[('direccion_id','=',[dependencia_direccion_id])]" />
+                <field name="dependencia_gerencia_linea_id" select="0" required="True" domain="[('gerencia_general_id','=',[dependencia_gerencia_id])]" />
+                <field name="dependencia_cfs_id" select="0" required="True"/>
+                <field name="dependencia_division_id" select="0" required="True"/>
+                <field name="dependencia_coordinacion_id" select="0" required="True"/>
+            </group>
+            </page>
+	    <page string="Incidencias">
+            <group col="4" colspan="4" string="Incidencias Asociadas">
+                <field name="incidencia_ids" nolabel="1" select="0" required="True"/>
             </group>
             </page>
             </notebook>
@@ -171,6 +186,7 @@
                 <field name="nombre" select="2"/>
                 <separator string="Tipos de Incidencia" colspan="4"/>
                 <field name="tipo_incidencia" nolabel="1" colspan="4" select="0"/>
+   		<field name="dependencia_id" select="2"/>
 
             </group>
             </form>
@@ -184,6 +200,7 @@
             <tree string="sisr.helpdesk.area_incidencia">
                 <field name="codigo"/>
                 <field name="nombre"/>
+		<field name="dependencia_id"/>
 
             </tree>
         </field>
@@ -231,6 +248,22 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
+
+<!--Acá inicia la clase heredada de res.users-->
+    <record model="ir.ui.view" id="view_res_users_form_inherit">
+        <field name="name">res.users.inherit</field>
+        <field name="model">res.users</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="before">
+		
+		<field name="dependencia_id" select="0"/>
+                <field name="area_incidencia_id" select="0" domain="[('dependencia_id','=',dependencia_id)]"/>
+            </field>
+        </field>
+    </record>
+<!--fin de la herencia desde res.users-->
 
 <menuitem name="Help Desk" id="menu_sisr_helpdesk"/>
 <menuitem name="Formularios" id="menu_sisr_helpdesk_formularios" parent="menu_sisr_helpdesk"/>
