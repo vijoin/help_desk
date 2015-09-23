@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+
+	<!--record id="div_PDE_DEJ_CCO" model="sisr_base_dependencia_coordinacion">
+		<field name="codigo">CCO</field>
+		<field name="division">COMISIÓN DE CONTRATACIONES</field>
+		<field name="gerencia_linea_id" ref="ger_lin_PDE_DEJ"/>
+	</record>
+
+	<record id="div_PDE_DEJ_OAC" model="sisr_base_dependencia_coordinacion">
+		<field name="codigo">OAC</field>
+		<field name="division">OFICINA DE ATENCIÓN AL CIUDADANO</field>
+		<field name="gerencia_linea_id" ref="ger_lin_PDE_DEJ"/>
+	</record--->
+
+	</data>
+</openerp>
