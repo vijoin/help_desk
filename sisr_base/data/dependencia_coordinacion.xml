@@ -12,7 +12,7 @@
 		<field name="codigo">OAC</field>
 		<field name="division">OFICINA DE ATENCIÓN AL CIUDADANO</field>
 		<field name="gerencia_linea_id" ref="ger_lin_PDE_DEJ"/>
-	</record--->
+	</record -->
 
 	</data>
 </openerp>

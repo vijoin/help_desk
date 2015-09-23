@@ -134,9 +134,9 @@
                 <field name="dependencia_direccion_id" required="True" select="0" />
                 <field name="dependencia_gerencia_id" select="0" required="True" domain="[('direccion_id','=',[dependencia_direccion_id])]" />
                 <field name="dependencia_gerencia_linea_id" select="0" required="True" domain="[('gerencia_general_id','=',[dependencia_gerencia_id])]" />
-                <field name="dependencia_cfs_id" select="0" required="True"/>
-                <field name="dependencia_division_id" select="0" required="True"/>
-                <field name="dependencia_coordinacion_id" select="0" required="True"/>
+                <field name="dependencia_cfs_id" select="0" required="False"/>
+                <field name="dependencia_division_id" select="0" required="False"/>
+                <field name="dependencia_coordinacion_id" select="0" required="False"/>
             </group>
             </page>
 	    <page string="Incidencias">

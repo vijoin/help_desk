@@ -71,6 +71,7 @@ sisr_base_dependencia_gerencia_linea()
 
 class sisr_base_dependencia_division(osv.osv):
     _name = 'sisr.base.dependencia_division'
+    _rec_name = 'nombre'
     _columns = {
         'codigo': fields.char(string="Código", size=20, help='Código de la División'),
         'nombre': fields.char(string="Nombre", size=60, help='Nombre de la División'),
