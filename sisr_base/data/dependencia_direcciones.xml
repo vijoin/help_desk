@@ -20,6 +20,16 @@
 		<field name="nombre">Dirección Estratégica</field>
 		<field name="ubicacion">Av. Nueva Granada, Edificio Inces, Piso 11</field>
 	</record>
+
+
+<!-- AGREGADAS NUEVAS-->
+	<!--record id="dir_EST" model="sisr.base.dependencia_direccion">
+		<field name="codigo">DIR_EST</field>
+		<field name="nombre">Dirección Estratégica</field>
+		<field name="ubicacion">Av. Nueva Granada, Edificio Inces, Piso 11</field>
+	</record-->
+
+
 	
 	</data>
 </openerp>
