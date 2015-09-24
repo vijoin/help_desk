@@ -39,7 +39,7 @@ class sisr_helpdesk_incidencia(osv.osv):
 	'denominacion': fields.char('Denominación', size=90),
 	'descripcion': fields.text('Descripción'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
-	'fecha_solucion': fields.datetime('fecha de Solución'),    
+	'fecha_solucion': fields.datetime('Fecha de Solución'),    
 }
 
     def create(self, cr, uid, vals, context=None):
