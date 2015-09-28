@@ -33,6 +33,6 @@
 		<field name="nombre">Soporte</field>
 		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
 	</record-->
-	
+		
 	</data>
 </openerp>
