@@ -37,9 +37,10 @@ class sisr_helpdesk_incidencia(osv.osv):
         'observacion_ids': fields.one2many('sisr.helpdesk.observacion', 'incidencia_id', string="Observaciones", help='Observaciones de una incidencia'),
 	'asignacion' : fields.many2one('res.users', 'Asignado a:'),
 	'denominacion': fields.char('Denominación', size=90),
-	'descripcion': fields.text('Descripción'),
+    'forma_de_solicitud':fields.selection([('memo','Memo'),('correo','Correo'),('llamada','Llamada Telefónica'),('presencial','Presencial')], string="Forma de Solicitud"),
+    'descripcion': fields.text('Descripción'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
-	'fecha_solucion': fields.datetime('Fecha de Solución'),    
+	'fecha_solucion': fields.datetime('Fecha de Solución'),
 }
 
     def create(self, cr, uid, vals, context=None):

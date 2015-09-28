@@ -22,7 +22,11 @@
                 <field name="solicitante_id" colspan="4" select="1"/>
 		<field name="asignacion" colspan="4" select="1" domain="[('area_incidencia_id','=',area_incidencia_id)]"/>
 		<field name="denominacion" colspan="4" select="2"/>
-		<field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
+		
+        <field name="forma_de_solicitud" colspan="2" select="0"/>
+        <newline/>
+
+        <field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
 		<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
 		<separator string="Descripción" colspan="4"/>
 		<field name="descripcion" colspan="4" nolabel="1" select="0"/> 
@@ -49,6 +53,7 @@
                 <field name="codigo"/>
                 <field name="solicitante_id"/>
                 <field name="area_incidencia_id"/>
+        <!--field name="forma_de_solicitud"/-->
 		<field name="asignacion"/>
                 <field name="state"/>
 
