@@ -59,6 +59,7 @@ class sisr_helpdesk_tipo_incidencia(osv.osv):
         'nombre': fields.char('Nombre', size=60, help='Nombre de este tipo de incidencia'),
         'incidencia_ids': fields.many2many('sisr.helpdesk.incidencia', 'incidencia_tipoincidencia_rel', 'tipo_incidencia_id', 'incidencia_id', string="Incidencias", help='Incidencias realizadas para este tipo de incidencia'),
         'area_incidencia_id': fields.many2one('sisr.helpdesk.area_incidencia', string="Área de Incidencia", help='Área de Incidencia a la que pertenece este tipo'),
+        'descripcion': fields.text('Descripción'),
     }
 sisr_helpdesk_tipo_incidencia()
 

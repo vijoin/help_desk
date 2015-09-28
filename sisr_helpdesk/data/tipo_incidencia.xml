@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		  
+	<!-- Tipo de incidencias>
+	<record id="area_incidencia_desa" model="sisr.helpdesk.area_incidencia">
+		<field name="codigo">desa</field>
+		<field name="nombre">Desarrollo</field>
+		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	</record>
+	<record id="area_incidencia_dato" model="sisr.helpdesk.area_incidencia">
+		<field name="codigo">dato</field>
+		<field name="nombre">Base de Datos</field>
+		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	</record>
+	<record id="area_incidencia_scsp" model="sisr.helpdesk.area_incidencia">
+		<field name="codigo">scsp</field>
+		<field name="nombre">Seguimiento y Control a Sistemas en Producción</field>
+		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	</record>
+	<record id="area_incidencia_tlcm" model="sisr.helpdesk.area_incidencia">
+		<field name="codigo">tlcm</field>
+		<field name="nombre">Telecomunicaciones</field>
+		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	</record>
+	<record id="area_incidencia_serv" model="sisr.helpdesk.area_incidencia">
+		<field name="codigo">serv</field>
+		<field name="nombre">Servidores</field>
+		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	</record>
+	<record id="area_incidencia_sprt" model="sisr.helpdesk.area_incidencia">
+		<field name="codigo">sprt</field>
+		<field name="nombre">Soporte</field>
+		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	</record-->
+	
+	</data>
+</openerp>
