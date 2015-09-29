@@ -25,6 +25,7 @@
 		
         <field name="forma_de_solicitud" colspan="2" select="0"/>
         <newline/>
+        <!--field name="adjunto" select="0"/-->
 
         <field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
 		<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
