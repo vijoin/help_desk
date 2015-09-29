@@ -33,7 +33,7 @@ class sisr_helpdesk_incidencia(osv.osv):
         'dependencia_id': fields.many2one('sisr.base.dependencia_gerencia','Dependencia'),
         'area_incidencia_id': fields.many2one('sisr.helpdesk.area_incidencia', string="Área de Incidencia"),
         'tipo_incidencia_ids': fields.many2many('sisr.helpdesk.tipo_incidencia', 'incidencia_tipoincidencia_rel','incidencia_id', 'tipo_incidencia_id', string="Tipo de Incidencia"),
-        'state': fields.selection([('borrador','Borrador'),('resuelto','Resuelto'),('asignado','Asignado'),('cancelado','Cancelado'),('revision','En Revisión')], string="Status", default="borrador"),
+        'state': fields.selection([('asignado','Asignado'),('proceso','En Proceso'),('atendido','Atendido'),('resuelto','Resuelto'),('cancelado','Cancelado')], string="Status", default="asignado"),
         'observacion_ids': fields.one2many('sisr.helpdesk.observacion', 'incidencia_id', string="Observaciones", help='Observaciones de una incidencia'),
 	'asignacion' : fields.many2one('res.users', 'Asignado a:'),
 	'denominacion': fields.char('Denominación', size=90),
