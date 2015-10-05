@@ -29,6 +29,9 @@ from datetime import date, datetime
 class sisr_helpdesk_incidencia(osv.osv):
     _name = 'sisr.helpdesk.incidencia'
     _rec_name = 'codigo'
+
+    #_inherit = ['mail.thread', 'ir.needaction_mixin']
+
     _columns = {
         'codigo': fields.char('Código', size=10, help="Código de la Incidencia"),
         'solicitante_id': fields.many2one('sisr.helpdesk.solicitante', string="Solicitante", help='Nombre Completo del Solicitante de la Incidencia'),
