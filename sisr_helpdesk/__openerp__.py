@@ -26,7 +26,7 @@
         "website" : "http://openerp.com",
         "category" : "Unknown",
         "description": """  """,
-        "depends" : ['base'],
+        "depends" : ['base', 'mail'],
         "init_xml" : [ ],
         "demo_xml" : [ ],
         "update_xml" : ['sisr_helpdesk_view.xml','security/res.groups.xml', 'security/ir.model.access.csv','security/ir.rule.xml','incidencia_codigo_sequence.xml','data/area_incidencia.xml','data/tipo_incidencia.xml'],
