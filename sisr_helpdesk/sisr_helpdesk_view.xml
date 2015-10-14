@@ -4,7 +4,7 @@
 
 
 
-    <record model="ir.ui.view" id="view_sisr_helpdesk_incidencia_form">
+	<record model="ir.ui.view" id="view_sisr_helpdesk_incidencia_form">
         <field name="name">sisr.helpdesk.incidencia.form</field>
         <field name="model">sisr.helpdesk.incidencia</field>
         <field name="type">form</field>
@@ -43,14 +43,19 @@
             </group>
             </sheet>
             </form>
+        
+            
+            
+            <group>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </group>
 
-            <!-- para el chat -->
-            <div class="oe_chatter">
-                <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
-                <field name="message_ids" widget="mail_thread"/>
-            </div>
-            <!-- fin del chat -->   
 
+             
+        
         </field>
     </record>
     <record model="ir.ui.view" id="view_sisr_helpdesk_incidencia_tree">

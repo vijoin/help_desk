@@ -26,7 +26,7 @@ from datetime import date, datetime
 
 class sisr_helpdesk_incidencia(osv.osv):
     _name = 'sisr.helpdesk.incidencia'
-    _inherit = 'mail.thread'
+    _inherit = ['mail.thread', 'ir.needaction_mixin']
     _rec_name = 'codigo'
 
     
