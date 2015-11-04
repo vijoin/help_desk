@@ -41,7 +41,9 @@ class sisr_helpdesk_incidencia(osv.osv):
 	'asignacion' : fields.many2one('res.users', 'Asignado a:'),
 	'denominacion': fields.char('Denominación', size=90),
     'forma_de_solicitud':fields.selection([('memo','Memo'),('correo','Correo Electrónico'),('llamada','Llamada Telefónica'),('presencial','Presencial'), ('gestion','Gestión Documental')], string="Forma de Solicitud"),
-    'adjunto':fields.binary('Adjuntos', help='Para adjuntar documentos con mas detalles'),
+    #Para adjuntar los documentos a enviar.
+    'adjunto' : fields.one2many('sisr.helpdesk.adjuntos', 'adjunto_id', string ="Adjuntos", help='Documentos adicionales, Respaldos Fisicos'),
+
     'descripcion': fields.text('Descripción'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
 	'fecha_solucion': fields.datetime('Fecha de Solución'),
@@ -128,4 +130,16 @@ class res_users_inherit(osv.osv):
         'area_incidencia_id':fields.many2one('sisr.helpdesk.area_incidencia','Area'),
 }
 res_users_inherit()
+#nueva clase para adjuntar mas de un documento a la incidencia.
+class sisr_helpdesk_adjuntos(osv.osv):
+    _name = 'sisr.helpdesk.adjuntos'
+    _rec_name = 'nombre'
+    _columns = {
 
+        'adjunto' : fields.binary(string="Adjuntos", help='Se suben los archivos adicionales que guardan relacion con el documento'),
+        'observacion' : fields.text(string="Descripcion", help='Breves notas sobre el archivo que se adjunta'),
+        'nombre' : fields.char(string="Descripcion", size=50, help='Breves notas sobre el archivo que se adjunta'),
+        'adjunto_id' : fields.many2one('sisr.helpdesk.incidencia', 'incidencia'),
+}
+sisr_helpdesk_adjuntos()
+#Fin de la clase

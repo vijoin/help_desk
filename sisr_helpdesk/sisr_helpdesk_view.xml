@@ -25,8 +25,9 @@
 		
         <field name="forma_de_solicitud" colspan="2" select="0"/>
         <newline/>
-        <field name="adjunto" select="0"/>
-
+        <separator string="Adjuntos" colspan="4"/>
+        <field name="adjunto" colspan="4" nolabel="1" select="0"/>
+        <newline/>
         <field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
 		<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
 		<separator string="Descripción" colspan="4"/>
@@ -53,11 +54,47 @@
                 </div>
             </group>
 
-
-             
-        
         </field>
     </record>
+
+
+    
+   	<record model="ir.ui.view" id="view_sisr_helpdesk_adjuntos_form">
+        <field name="name">sisr.helpdesk.adjuntos.form</field>
+        <field name="model">sisr.helpdesk.adjuntos</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Adjuntos">
+                <field name="adjunto"/>
+                <field name="observacion"/>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_sisr_helpdesk_adjuntos_tree">
+        <field name="name">sisr.helpdesk.adjuntos.tree</field>
+        <field name="model">sisr.helpdesk.adjuntos</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+               
+            <tree string="sisr.helpdesk.adjuntos">
+                <!-- No se puede poner un binary en el tree
+                <field name="adjunto"/>
+                -->
+                <field name="observacion"/>                          
+            </tree>
+        </field>
+    </record>    
+
+    <!--record model="ir.actions.act_window" id="action_sisr_helpdesk_adjuntos">
+        <field name="name">Incidencia</field>
+        <field name="res_model">sisr.helpdesk.adjuntos</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record-->
+
+
+
+
     <record model="ir.ui.view" id="view_sisr_helpdesk_incidencia_tree">
         <field name="name">sisr.helpdesk.incidencia.tree</field>
         <field name="model">sisr.helpdesk.incidencia</field>
