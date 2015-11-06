@@ -43,7 +43,7 @@ class sisr_helpdesk_incidencia(osv.osv):
     'forma_de_solicitud':fields.selection([('memo','Memo'),('correo','Correo Electrónico'),('llamada','Llamada Telefónica'),('presencial','Presencial'), ('gestion','Gestión Documental')], string="Forma de Solicitud"),
     #Para adjuntar los documentos a enviar.
     'adjunto' : fields.one2many('sisr.helpdesk.adjuntos', 'adjunto_id', string ="Adjuntos", help='Documentos adicionales, Respaldos Fisicos'),
-
+    #Fin del adjunto
     'descripcion': fields.text('Descripción'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
 	'fecha_solucion': fields.datetime('Fecha de Solución'),
