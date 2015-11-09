@@ -47,6 +47,7 @@ class sisr_helpdesk_incidencia(osv.osv):
     'descripcion': fields.text('Descripción'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
 	'fecha_solucion': fields.datetime('Fecha de Solución'),
+    
 }
 
     def create(self, cr, uid, vals, context=None):
@@ -65,7 +66,7 @@ class sisr_helpdesk_tipo_incidencia(osv.osv):
         'nombre': fields.char('Nombre', size=60, help='Nombre de este tipo de incidencia'),
         'incidencia_ids': fields.many2many('sisr.helpdesk.incidencia', 'incidencia_tipoincidencia_rel', 'tipo_incidencia_id', 'incidencia_id', string="Incidencias", help='Incidencias realizadas para este tipo de incidencia'),
         'area_incidencia_id': fields.many2one('sisr.helpdesk.area_incidencia', string="Área de Incidencia", help='Área de Incidencia a la que pertenece este tipo'),
-    'descripcion': fields.text('Descripción'),
+        'descripcion': fields.text('Descripción'),
     }
 sisr_helpdesk_tipo_incidencia()
 
@@ -137,8 +138,9 @@ class sisr_helpdesk_adjuntos(osv.osv):
     _columns = {
 
         'adjunto' : fields.binary(string="Adjuntos", help='Se suben los archivos adicionales que guardan relacion con el documento'),
-        'observacion' : fields.text(string="Descripción", help='Breves notas sobre el archivo que se adjunta'),
-        'nombre' : fields.char(string="Descripción", size=50, help='Breves notas sobre el archivo que se adjunta'),
+        'numero': fields.char(string="Número de adjunto", size=10, help='Numero de adjunto'),
+        'nombre': fields.char(string="Nombre del Archivo", size=60, help='Nombre del archivo adjuntado'),
+        'observacion' : fields.text(string="Descripción22", size=50, help='Breve nota sobre el archivo que se adjunta'),
         'adjunto_id' : fields.many2one('sisr.helpdesk.incidencia', 'incidencia'),
 }
 sisr_helpdesk_adjuntos()

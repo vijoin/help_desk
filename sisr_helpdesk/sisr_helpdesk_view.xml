@@ -38,7 +38,7 @@
 
 
 		<separator string="Adjuntos" colspan="4"/>
-        <field name="adjunto" colspan="4" nolabel="1" select="0"/>
+        <field name="adjunto" nolabel="1" colspan="4" select="0"/>
         <newline/>
                 
                 <separator string="Observaciones" colspan="4"/>
@@ -71,9 +71,14 @@
         <field name="model">sisr.helpdesk.adjuntos</field>
         <field name="type">form</field>
         <field name="arch" type="xml">
+        	
             <form string="Adjuntos">
-                <field name="adjunto"/>
-                <field name="observacion"/>
+            <group col="2" colspan="4">
+            		<field name="adjunto"/>
+            		<field name="numero"/>
+            		<field name="nombre"/>
+            		<field name="observacion"/>
+            </group>
             </form>
         </field>
     </record>
@@ -87,6 +92,8 @@
                 <!-- No se puede poner un binary en el tree
                 <field name="adjunto"/>
                 -->
+                <field name="numero"/>
+                <field name="nombre"/>
                 <field name="observacion"/>                          
             </tree>
         </field>
@@ -138,10 +145,8 @@
                 <field name="nombre" select="2"/>
                 <field name="area_incidencia_id" select="0"/>
                 <newline/>
-
                 <separator string="Descripción" colspan="4"/>
                 <field name="descripcion" colspan="4" nolabel="1" select="0"/>
-                
                 <separator string="Incidencias" colspan="4"/>
                 <field name="incidencia_ids" nolabel="1" colspan="4" select="0"/>
 
