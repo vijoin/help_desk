@@ -45,6 +45,7 @@ class sisr_helpdesk_incidencia(osv.osv):
     'adjunto' : fields.one2many('sisr.helpdesk.adjuntos', 'adjunto_id', string ="Adjuntos", help='Documentos adicionales, Respaldos Fisicos'),
     #Fin del adjunto
     'descripcion': fields.text('Descripción'),
+    'procedimiento': fields.text('Procedimiento en la Solución'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
 	'fecha_solucion': fields.datetime('Fecha de Solución'),
     
@@ -140,7 +141,7 @@ class sisr_helpdesk_adjuntos(osv.osv):
         'adjunto' : fields.binary(string="Adjuntos", help='Se suben los archivos adicionales que guardan relacion con el documento'),
         'numero': fields.char(string="Número de adjunto", size=10, help='Numero de adjunto'),
         'nombre': fields.char(string="Nombre del Archivo", size=60, help='Nombre del archivo adjuntado'),
-        'observacion' : fields.text(string="Descripción22", size=50, help='Breve nota sobre el archivo que se adjunta'),
+        'observacion' : fields.text(string="Descripción", size=50, help='Breve nota sobre el archivo que se adjunta'),
         'adjunto_id' : fields.many2one('sisr.helpdesk.incidencia', 'incidencia'),
 }
 sisr_helpdesk_adjuntos()
