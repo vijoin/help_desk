@@ -47,7 +47,9 @@ class sisr_helpdesk_incidencia(osv.osv):
     'descripcion': fields.text('Descripción'),
     'procedimiento': fields.text('Procedimiento en la Solución'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
-	'fecha_solucion': fields.datetime('Fecha de Solución'),
+    'fecha_Proceso': fields.datetime('Fecha Proceso'),
+    'fecha_atendido': fields.datetime('Fecha Atendido'),
+	'fecha_solucion': fields.datetime('Fecha Resuelto'),
     
 }
 
@@ -146,3 +148,4 @@ class sisr_helpdesk_adjuntos(osv.osv):
 }
 sisr_helpdesk_adjuntos()
 #Fin de la clase
+
