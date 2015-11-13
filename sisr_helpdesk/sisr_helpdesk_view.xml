@@ -15,9 +15,6 @@
                 </header>
             <sheet>
             <group col="4" colspan="2">
-            	<field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
-            	<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
-        <newline/>    	
                 <field name="codigo" select="1" readonly="1"/>
 		<newline/>
 		<field name="dependencia_id" select="0" required="True"/>
@@ -75,28 +72,15 @@
                 <page string="Seguimiento de Incidencia">
    		    		<group col="4" colspan="4">
    		    			<field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
-   		    			<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
    		    			<field name="fecha_Proceso" colspan="2" select="0" readonly="True"/>
    		    			<field name="fecha_atendido" colspan="2" select="0" readonly="True"/>
+   		    			<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
    		    			<newline/>
    		    		</group>
    		    	</page>
 
    		    </notebook>
-            <!--
-   		    <notebook>
-   		    	<page string="Seguimiento de Incidencia">
-   		    		<group col="4" colspan="4">
-   		    			<field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
-   		    			<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
-   		    			<field name="fecha_Proceso" colspan="2" select="0" readonly="True"/>
-   		    			<field name="fecha_atendido" colspan="2" select="0" readonly="True"/>
-   		    			<newline/>
-   		    		</group>
-   		    	</page>
-            </notebook>
 
-               -->
             </sheet>
             </form>
         

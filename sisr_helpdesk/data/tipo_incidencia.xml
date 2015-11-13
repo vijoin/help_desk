@@ -1,38 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
 	<data noupdate="1">
-		  
-	<!-- Tipo de incidencias>
-	<record id="area_incidencia_desa" model="sisr.helpdesk.area_incidencia">
-		<field name="codigo">desa</field>
-		<field name="nombre">Desarrollo</field>
-		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	
+	<!--
+	<Tipo de incidencias>
+	 -->	
+
+	<record id="tipo_incidencia_sprtcu" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTCU</field>
+		<field name="nombre"> </field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
 	</record>
-	<record id="area_incidencia_dato" model="sisr.helpdesk.area_incidencia">
-		<field name="codigo">dato</field>
-		<field name="nombre">Base de Datos</field>
-		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	
+	<record id="tipo_incidencia_sprtici" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTICI</field>
+		<field name="nombre">Instalación y Configuración de Impresoras</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
 	</record>
-	<record id="area_incidencia_scsp" model="sisr.helpdesk.area_incidencia">
-		<field name="codigo">scsp</field>
-		<field name="nombre">Seguimiento y Control a Sistemas en Producción</field>
-		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+
+	<record id="tipo_incidencia_sprtap" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTAP</field>
+		<field name="nombre">Actualización de Pluying</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
 	</record>
-	<record id="area_incidencia_tlcm" model="sisr.helpdesk.area_incidencia">
-		<field name="codigo">tlcm</field>
-		<field name="nombre">Telecomunicaciones</field>
-		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+	
+	<record id="tipo_incidencia_sprtics" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTICS</field>
+		<field name="nombre">Instalación y Configuración de Scanner</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
 	</record>
-	<record id="area_incidencia_serv" model="sisr.helpdesk.area_incidencia">
-		<field name="codigo">serv</field>
-		<field name="nombre">Servidores</field>
-		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
+
+	<record id="tipo_incidencia_sprtcs" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTCS</field>
+		<field name="nombre">Configuración de Sacofigo</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
 	</record>
-	<record id="area_incidencia_sprt" model="sisr.helpdesk.area_incidencia">
-		<field name="codigo">sprt</field>
-		<field name="nombre">Soporte</field>
-		<field name="dependencia_id" ref="sisr_base.ger_INF"/>
-	</record-->
+
+	<record id="tipo_incidencia_sprtcsw" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTCSW</field>
+		<field name="nombre">Configuración de Sirena Web</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+ 
+
+    
+	<record id="tipo_incidencia_sprtit" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTIT</field>
+		<field name="nombre">Instalación de Tonner</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+
+	<record id="tipo_incidencia_sprtri" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTRI</field>
+		<field name="nombre">Revisar Impresora</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+
+	<record id="tipo_incidencia_sprtrs" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTRS</field>
+		<field name="nombre">Revisar Scanner</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+
+	<record id="tipo_incidencia_sprtbd" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTBD</field>
+		<field name="nombre">Bases de Datos</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+
+	<record id="tipo_incidencia_sprtie" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTIE</field>
+		<field name="nombre">Instalación de Equipos</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+
+	<record id="tipo_incidencia_sprtrc" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTRC</field>
+		<field name="nombre">Revisar Componentes </field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+
+	<record id="tipo_incidencia_sprtate" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTATE</field>
+		<field name="nombre">Asistencia Técnica para Eventos</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+
+	<record id="tipo_incidencia_sprticl" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">SPRTICL</field>
+		<field name="nombre">Instalación y configuración de Aplicaciones Linux</field>
+		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
+	</record>
+    
+
+    
+	<record id="tipo_incidencia_bdperdep" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDPERDEP</field>
+		<field name="nombre">Permisología en Dependencia </field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdpera" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDPERA</field>
+		<field name="nombre">Permisológia en Opcion de Actualizar</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdperm" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDPERM</field>
+		<field name="nombre">Permisología en Módulos</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdpercu" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDPERCU</field>
+		<field name="nombre">Creción de Usuario</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdcon" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDCON</field>
+		<field name="nombre">Contraseña</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdexu" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDEXU</field>
+		<field name="nombre">Exclusión de Usuario</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdrrh" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDRRH</field>
+		<field name="nombre">RRHH</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdaud" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDAUD</field>
+		<field name="nombre">Auditoria</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdacr" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDACR</field>
+		<field name="nombre">Activación de Registros</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bddesr" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDDESR</field>
+		<field name="nombre">Desactivación de Registros</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdlsch" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDLCH</field>
+		<field name="nombre">Liberación de Cheques</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdsiper" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDSIPER</field>
+		<field name="nombre">Sincera Permisología </field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_bdapro" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">BDAPRO</field>
+		<field name="nombre">Actualización de Programas</field>
+		<field name="area_incidencia_id" ref="area_incidencia_dato"/>
+	</record>
+
+	<record id="tipo_incidencia_desace" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">DESACE</field>
+		<field name="nombre">Corrección de Errores</field>
+		<field name="area_incidencia_id" ref="area_incidencia_desa"/>
+	</record>
+
+	<record id="tipo_incidencia_desaanfun" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">DESANFUN</field>
+		<field name="nombre">Nuevas Funcionalidades</field>
+		<field name="area_incidencia_id" ref="area_incidencia_desa"/>
+	</record>
+
+	<record id="tipo_incidencia_desaleinf" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">DESALEINF</field>
+		<field name="nombre">Levantamiento de Información</field>
+		<field name="area_incidencia_id" ref="area_incidencia_desa"/>
+	</record>
+
+	<record id="tipo_incidencia_desadimo" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">DESADIMO</field>
+		<field name="nombre">Diseño y Modelos</field>
+		<field name="area_incidencia_id" ref="area_incidencia_desa"/>
+	</record>
+
+	<record id="tipo_incidencia_desacaweb" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">DESACAWEB</field>
+		<field name="nombre">Carga de Contenido a la Web</field>
+		<field name="area_incidencia_id" ref="area_incidencia_desa"/>
+	</record>
+      
 		
 	</data>
 </openerp>

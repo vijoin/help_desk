@@ -95,7 +95,8 @@ class sisr_helpdesk_solicitante(osv.osv):
     }
 
     _sql_constraints = [('cedula_solicitante_uniq', 'unique(cedula)', 'Este solicitante ya ha sido registrado en el sistema (cedula repetida)')]    
-    
+
+      
     def name_get(self, cr, uid, ids, context=None):
         res = []
         solicitantes = self.browse(cr, uid, ids, context)
