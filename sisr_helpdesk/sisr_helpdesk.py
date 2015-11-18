@@ -53,6 +53,8 @@ class sisr_helpdesk_incidencia(osv.osv):
 #    'retraso' : fields.integer('Retraso dias', help="Conteo de dias a partir de la fecha de entrega", readonly="True", compute="_compute_calculo_dias", store="False")
     
 }
+
+#prueba servidor
     def create(self, cr, uid, vals, context=None):
         vals.update({'codigo':self.pool.get('ir.sequence').get(cr, uid, 'sisr.helpdesk.incidencia')})
 	vals.update({'fecha_creacion':datetime.today()})
