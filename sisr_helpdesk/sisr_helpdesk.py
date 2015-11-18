@@ -47,19 +47,64 @@ class sisr_helpdesk_incidencia(osv.osv):
     'descripcion': fields.text('Descripción'),
     'procedimiento': fields.text('Procedimiento en la Solución'),
 	'fecha_creacion': fields.datetime('Fecha de Creación'),
-    'fecha_Proceso': fields.datetime('Fecha Proceso'),
+    'fecha_proceso': fields.datetime('Fecha Proceso'),
     'fecha_atendido': fields.datetime('Fecha Atendido'),
 	'fecha_solucion': fields.datetime('Fecha Resuelto'),
+#    'retraso' : fields.integer('Retraso dias', help="Conteo de dias a partir de la fecha de entrega", readonly="True", compute="_compute_calculo_dias", store="False")
     
 }
-
     def create(self, cr, uid, vals, context=None):
         vals.update({'codigo':self.pool.get('ir.sequence').get(cr, uid, 'sisr.helpdesk.incidencia')})
 	vals.update({'fecha_creacion':datetime.today()})
         new_id = super(sisr_helpdesk_incidencia, self).create(cr, uid, vals, context=None)
         return new_id
- 
+    
+    # Botones para el proceso Workflow
+
+    #@api.one
+    def action_asignado(self, cr, uid, ids, context=None):
+        self.state='asignado'
+
+
+     #@api.one
+    def action_proceso(self, cr, uid, ids, context=None):
+        hora= {'fecha_proceso':datetime.today()}
+        self.pool.get('sisr.helpdesk.incidencia').write(cr, uid, ids, hora, context)
+        return
+
+
+     #@api.one
+    def action_atendido(self, cr, uid, ids, context=None):
+        self.state='atendido'
+
+
+     #@api.one
+    def action_resuelto(self, cr, uid, ids, context=None):
+        self.state='resuelto'
+
+
+     #@api.one
+    def action_cancelado(self, cr, uid, ids, context=None):
+        self.state='cancelado'
+    #Fin de los botones
+
+
+    #Calculo de dias transcurridos
+
+    #@api.depends('fecha_doc')
+#    def _compute_calculo_dias(self):
+#        #raise ValidationError("el valor de la fecha es %s" %(self.fecha_doc))
+#        carga = datetime.strptime(self.fecha_doc,'%Y-%m-%d')
+#        #today = date.today()
+#        #dias = today.year - carga.year - ((today.month, today.day) < (carga.month, carga.day))
+#        #dias = today.day - carga.day 
+#        dias = datetime.today() - carga
+#       #v = {'value':{}}
+#       #v['value']['retraso'] = dias
+#        self.retraso = dias.days
+#        return True
 sisr_helpdesk_incidencia()
+
 
 class sisr_helpdesk_tipo_incidencia(osv.osv):
     """Especificación del tipo de Incidencia, depende del área de incidencia. Ej: Sistema X, Sistema Y, Consumibles, Impresora, Soporte Técnico, Correo, Acceso a Internet, Telefonía, Etc"""
