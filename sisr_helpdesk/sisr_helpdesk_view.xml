@@ -11,15 +11,23 @@
         <field name="arch" type="xml">
             <form string="sisr.helpdesk.incidencia">
             <header>
-                    <field name="state" widget="statusbar" clickable="1" class="oe_right" select="0"/>
-                </header>
+
+                <!-- Lineas para los botones de Workflow -->
+
+                <button name="action_asignado" string="Asignado" type="workflow"/>
+                <button name="action_proceso" string="En Procesar" type="workflow"/>
+                <button name="action_atendido" string="Atendido" type="workflow"/>
+                <button name="action_resuelto" string="Resuelto" type="workflow"/>
+                <button name="action_cancelado" string="Cancelado" type="workflow"/>
+                <field name="state" widget="statusbar" clickable="1" class="oe_right" select="0"/>
+            </header>
             <sheet>
             <group col="4" colspan="2">
                 <field name="codigo" select="1" readonly="1"/>
 		<newline/>
 		<field name="dependencia_id" select="0" required="True"/>
-                <field name="area_incidencia_id" select="2" domain="[('dependencia_id','=',dependencia_id)]"/>
-                <field name="solicitante_id" colspan="4" select="1"/>
+                <field name="area_incidencia_id" select="2" required="True" domain="[('dependencia_id','=',dependencia_id)]"/>
+                <field name="solicitante_id" colspan="4" required="True" select="1"/>
 		<field name="asignacion" colspan="4" select="1" domain="[('area_incidencia_id','=',area_incidencia_id)]"/>
 		<field name="denominacion" colspan="4" select="2"/>
 		
@@ -72,7 +80,7 @@
                 <page string="Seguimiento de Incidencia">
    		    		<group col="4" colspan="4">
    		    			<field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
-   		    			<field name="fecha_Proceso" colspan="2" select="0" readonly="True"/>
+   		    			<field name="fecha_proceso" colspan="2" select="0" readonly="True"/>
    		    			<field name="fecha_atendido" colspan="2" select="0" readonly="True"/>
    		    			<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
    		    			<newline/>

@@ -8,7 +8,7 @@
 
 	<record id="tipo_incidencia_sprtcu" model="sisr.helpdesk.tipo_incidencia">
 		<field name="codigo">SPRTCU</field>
-		<field name="nombre"> </field>
+		<field name="nombre">Crear Usuario</field>
 		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
 	</record>
 	

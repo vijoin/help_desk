@@ -1,0 +1,118 @@
+<openerp>
+    <data>
+        
+        <record model="workflow" id="helpdesk_workflow">
+            <field name="name">Workflow Help Desk</field>
+            <field name="osv">sisr.helpdesk.incidencia</field>
+            <field name="on_create">True</field>
+        </record>
+         
+        <record model="workflow.activity" id="act_asignado">
+            <field name="name">asignado</field>
+            <field name="wkf_id" ref="helpdesk_workflow"/>
+            <field name="flow_start" eval="True"/>
+            <field name="kind">function</field>
+            <field name="action">action_asignado()</field>
+        </record>
+
+        
+        <record model="workflow.activity" id="act_proceso">
+            <field name="name">proceso</field>
+            <field name="wkf_id" ref="helpdesk_workflow"/>
+            <field name="kind">function</field>
+            <field name="action">action_proceso()</field>
+        </record>
+
+<!--
+        <record model="workflow.activity" id="act_revisar">
+            <field name="name">revisar</field>
+            <field name="wkf_id" ref="Documento_workflow"/>
+            <field name="kind">function</field>
+            <field name="action">action_revisar()</field>
+        </record>
+
+        <record model="workflow.activity" id="act_observaciones">
+            <field name="name">observaciones</field>
+            <field name="wkf_id" ref="Documento_workflow"/>
+            <field name="kind">function</field>
+            <field name="action">action_observaciones()</field>
+        </record>
+
+
+        <record model="workflow.activity" id="act_procesando">
+            <field name="name">procesando</field>
+            <field name="wkf_id" ref="Documento_workflow"/>
+            <field name="kind">function</field>
+            <field name="action">action_procesando()</field>
+        </record>
+
+
+        <record model="workflow.activity" id="act_rechazar">
+            <field name="name">rechazar</field>
+            <field name="wkf_id" ref="Documento_workflow"/>
+            <field name="kind">function</field>
+            <field name="flow_stop" eval="True"/>
+            <field name="action">action_rechazar()</field>
+        </record>
+
+
+        <record model="workflow.activity" id="act_aprobar">
+            <field name="name">aprobar</field>
+            <field name="wkf_id" ref="Documento_workflow"/>
+            <field name="kind">function</field>
+            <field name="flow_stop" eval="True"/>
+            <field name="action">action_aprobar()</field>
+        </record>    
+        
+          -->
+        <!--Transiciones-->
+
+        <!--
+        <record model="workflow.transition" id="trans_borrar_enviar">
+            <field name="act_from" ref="act_borrador"/>
+            <field name="act_to" ref="act_enviar"/>
+            <field name="signal">action_enviar</field>
+        </record>
+
+        <record model="workflow.transition" id="trans_enviar_revisar">
+            <field name="act_from" ref="act_enviar"/>
+            <field name="act_to" ref="act_revisar"/>
+            <field name="signal">action_revisar</field>
+        </record>
+
+        <record model="workflow.transition" id="trans_revisar_observaciones">
+            <field name="act_from" ref="act_revisar"/>
+            <field name="act_to" ref="act_observaciones"/>
+            <field name="signal">action_observaciones</field>
+        </record>
+
+
+        <record model="workflow.transition" id="trans_observaciones_borrador">
+            <field name="act_from" ref="act_observaciones"/>
+            <field name="act_to" ref="act_borrador"/>
+            <field name="signal">action_borrador</field>
+        </record>
+
+
+        <record model="workflow.transition" id="trans_revisar_procesando">
+            <field name="act_from" ref="act_revisar"/>
+            <field name="act_to" ref="act_procesando"/>
+            <field name="signal">action_procesando</field>
+        </record> 
+
+        <record model="workflow.transition" id="trans_procesando_aprobado">
+            <field name="act_from" ref="act_procesando"/>
+            <field name="act_to" ref="act_aprobar"/>
+            <field name="signal">action_aprobar</field>
+        </record>
+
+        <record model="workflow.transition" id="trans_procesando_rechazado">
+            <field name="act_from" ref="act_procesando"/>
+            <field name="act_to" ref="act_rechazar"/>
+            <field name="signal">action_rechazar</field>
+         -->
+
+        </record>
+    </data>
+</openerp>       
+

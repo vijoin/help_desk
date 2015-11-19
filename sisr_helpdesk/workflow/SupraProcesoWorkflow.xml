@@ -1,0 +1,80 @@
+<openerp>
+	<data>
+		
+		<record model="workflow" id="supra_proceso_workflow">
+            <field name="name">Supra Proceso Gestion Documental</field>
+            <field name="osv">sisr.gd.proceso</field>
+            <field name="on_create">True</field>
+        </record>
+
+        
+        <!--ACTIVIDADES/NODOS-->
+
+        <record model="workflow.activity" id="act_espera">
+        	<field name="name">espera</field>
+        	<field name="wkf_id" ref="supra_proceso_workflow"/>
+        	<field name="flow_start" eval="True"/>
+        	<field name="kind">function</field>
+        	<field name="action">action_espera()</field>
+        </record>
+
+        <record model="workflow.activity" id="act_en_proceso">
+        	<field name="name">enproceso</field>
+        	<field name="wkf_id" ref="supra_proceso_workflow"/>
+        	<field name="kind">function</field>
+        	<field name="action">action_en_proceso()</field>
+        </record>        
+        
+        <!-- Intento de hacer funcionar el subflow
+        <record model="workflow.activity" id="act_en_proceso">
+            <field name="name">enproceso</field>
+            <field name="kind">subflow</field>
+            <field name="subflow_id">Documento_workflow</field>
+            <field name="wkf_id" ref="act_procesando"/>
+            <field name="action">action_procesando()</field>
+        </record>        
+        -->    
+        <record model="workflow.activity" id="act_culminado">
+        	<field name="name">culminado</field>
+        	<field name="wkf_id" ref="supra_proceso_workflow"/>
+        	<field name="flow_stop" eval="True"/>
+        	<field name="kind">function</field>
+        	<field name="action">action_culminado()</field>
+        </record>
+
+        <record model="workflow.activity" id="act_cancelado">
+        	<field name="name">cancelado</field>
+        	<field name="wkf_id" ref="supra_proceso_workflow"/>
+        	<field name="flow_stop" eval="True"/>
+        	<field name="kind">function</field>
+        	<field name="action">action_cancelado()</field>
+        </record>
+
+        <!--Transiciones-->
+
+
+        <record model="workflow.transition" id="trans_esperar_procesar">
+            <field name="act_from" ref="act_espera"/>
+            <field name="act_to" ref="act_en_proceso"/>
+            <field name="signal">action_en_proceso</field>
+        </record>
+
+
+        <record model="workflow.transition" id="trans_procesar_culminado">
+            <field name="act_from" ref="act_en_proceso"/>
+            <field name="act_to" ref="act_culminado"/>
+            <field name="signal">action_culminado</field>
+        </record>
+
+        <record model="workflow.transition" id="trans_procesar_cancelado">
+            <field name="act_from" ref="act_en_proceso"/>
+            <field name="act_to" ref="act_cancelado"/>
+            <field name="signal">action_cancelado</field>
+        </record>
+
+
+
+
+
+	</data>
+</openerp>		

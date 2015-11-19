@@ -54,7 +54,6 @@ class sisr_helpdesk_incidencia(osv.osv):
     
 }
 
-#prueba servidor
     def create(self, cr, uid, vals, context=None):
         vals.update({'codigo':self.pool.get('ir.sequence').get(cr, uid, 'sisr.helpdesk.incidencia')})
 	vals.update({'fecha_creacion':datetime.today()})
