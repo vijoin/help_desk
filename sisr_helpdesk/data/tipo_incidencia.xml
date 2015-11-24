@@ -8,7 +8,7 @@
 
 	<record id="tipo_incidencia_sprtcu" model="sisr.helpdesk.tipo_incidencia">
 		<field name="codigo">SPRTCU</field>
-		<field name="nombre">Crear Usuario</field>
+		<field name="nombre"> </field>
 		<field name="area_incidencia_id" ref="area_incidencia_sprt"/>
 	</record>
 	
@@ -202,6 +202,49 @@
 		<field name="area_incidencia_id" ref="area_incidencia_desa"/>
 	</record>
       
+
+    <record id="tipo_incidencia_orgmedp" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">ORGMEDP</field>
+		<field name="nombre">Diagrama de Proceso</field>
+		<field name="area_incidencia_id" ref="area_incidencia_orgme"/>
+	</record>
+
+	<record id="tipo_incidencia_orgmess" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">ORGMESS</field>
+		<field name="nombre">Seguimiento de Sistemas</field>
+		<field name="area_incidencia_id" ref="area_incidencia_orgme"/>
+	</record>
+
+	<record id="tipo_incidencia_orgmeds" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">ORGMEDS</field>
+		<field name="nombre">Diagrama de Secuencia</field>
+		<field name="area_incidencia_id" ref="area_incidencia_orgme"/>
+	</record>
+		
+
+	<record id="tipo_incidencia_orgmedmt" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">ORGMEDMT</field>
+		<field name="nombre">Diseñar Manual Técnico</field>
+		<field name="area_incidencia_id" ref="area_incidencia_orgme"/>
+	</record>
+
+	<record id="tipo_incidencia_orgmedmu" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">ORGMEDMU</field>
+		<field name="nombre">Diseñar Manual de Usuario</field>
+		<field name="area_incidencia_id" ref="area_incidencia_orgme"/>
+	</record>
+
+	<record id="tipo_incidencia_orgmedocp" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">ORGMEDOCP</field>
+		<field name="nombre">Documentación de Procesos de la Gerencia General de Informática</field>
+		<field name="area_incidencia_id" ref="area_incidencia_orgme"/>
+	</record>
+		
+	<record id="tipo_incidencia_orgmeaia" model="sisr.helpdesk.tipo_incidencia">
+		<field name="codigo">ORGMEAIA</field>
+		<field name="nombre">Apoyo en la Induccion de la aplicación a ser Implatadas</field>
+		<field name="area_incidencia_id" ref="area_incidencia_orgme"/>
+	</record>
 		
 	</data>
 </openerp>
