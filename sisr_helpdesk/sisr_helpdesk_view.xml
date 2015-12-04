@@ -13,13 +13,19 @@
             <header>
 
                 <!-- Lineas para los botones de Workflow -->
-
+                
+                <!--button name="action_asignado" states="asignado" string="Asignado" type="workflow"/>
+                <button name="action_proceso" states="proceso" string="En Proceso" type="workflow"/>
+                <button name="action_atendido" states="atendido" string="Atendido" type="workflow"/>
+                <button name="action_resuelto" states="resuelto" string="Resuelto" type="workflow"/-->
+               
+                <button name="action_leido" string="Leido" type="workflow"/>
                 <button name="action_asignado" string="Asignado" type="workflow"/>
-                <button name="action_proceso" string="En Procesar" type="workflow"/>
+                <button name="action_proceso" string="En Proceso" type="workflow"/>
                 <button name="action_atendido" string="Atendido" type="workflow"/>
                 <button name="action_resuelto" string="Resuelto" type="workflow"/>
-                <button name="action_cancelado" string="Cancelado" type="workflow"/>
-                <field name="state" widget="statusbar" clickable="1" class="oe_right" select="0"/>
+                <!--field name="state" widget="statusbar" clickable="0" class="oe_right" select="0"/-->
+                <field name="state" widget="statusbar" select="0"/>
             </header>
             <sheet>
             <group col="4" colspan="2">
@@ -79,10 +85,18 @@
                 <page string="Seguimiento de Incidencia">
    		    		<group col="4" colspan="4">
    		    			<field name="fecha_creacion" colspan="2" select="0" readonly="True"/>
+   		    			<field name="fecha_leido" colspan="2" select="0" readonly="True"/>
+   		    			<field name="fecha_asignado_a" colspan="2" select="0" readonly="True"/>
    		    			<field name="fecha_proceso" colspan="2" select="0" readonly="True"/>
    		    			<field name="fecha_atendido" colspan="2" select="0" readonly="True"/>
    		    			<field name="fecha_solucion" colspan="2" select="0" readonly="True"/>
-   		    			<newline/>
+   		    			<!--field name="dia_creacion" colspan="2" select="0" readonly="True"/>
+   		    			<field name="dia_leido" colspan="2" select="0" readonly="True"/>
+   		    			<field name="dia_asignado_a" colspan="2" select="0" readonly="True"/>
+   		    			<field name="dia_proceso" colspan="2" select="0" readonly="True"/>
+   		    			<field name="dia_atendido" colspan="2" select="0" readonly="True"/>
+   		    			<field name="dia_solucion" colspan="2" select="0" readonly="True"/-->
+   		    		<newline/>
    		    		</group>
    		    	</page>
    		    </notebook>
