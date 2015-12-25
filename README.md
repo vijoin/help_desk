@@ -1,5 +1,7 @@
 #Por favor, Leer
 
+## la rama helpdesk-desarrollo es la más actualizada
+
 ## Dependencias
 para el buen funcionamiento de este modelo debe incorporar en sus addons
 los siguientes módulos:
