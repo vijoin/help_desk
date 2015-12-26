@@ -475,7 +475,7 @@
 		<field name="observaciones"></field>
 		<field name="estado_id" ref="l10n_ve_dpt.geo_est_COJ"/>
 		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_COJ_EZZ"/>
-		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_SAC_SCA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_EZZ_SCA"/>
         <field name="gerencia_regional_id" ref="ger_COJ"/>
 	</record>
 
@@ -499,7 +499,7 @@
 		<field name="observaciones"></field>
 		<field name="estado_id" ref="l10n_ve_dpt.geo_est_COJ"/>
 		<field name="municipio_id" ref="l10n_ve_dpt.geo_mun_COJ_EZZ"/>
-		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_SAC_SCA"/>
+		<field name="parroquia_id" ref="l10n_ve_dpt.geo_par_COJ_EZZ_SCA"/>
         <field name="gerencia_regional_id" ref="ger_COJ"/>
 	</record>
 
